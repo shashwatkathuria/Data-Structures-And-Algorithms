@@ -17,7 +17,7 @@ class UndirectedGraph:
 
     def __init__(self, noOfVertices):
         self.edges  = []
-        self.vertices = list(range(1,noOfVertices))
+        self.vertices = list( range(1, noOfVertices) )
         self.noOfEdges = 0
 
     def addEdge(self, edge):
@@ -43,12 +43,12 @@ def main():
         g.addEdge(e)
         print("EDGE ADDED :  " + str(e))
 
-    print("\n" + "Minimum Cost Spanning Tree Cost:" + str( PRIM(graph = g, startVertex = 1) ) + "\n")
+    print("\n" + "Minimum Cost Spanning Tree Cost:" + str( PrimsAlgorithm(graph = g, startVertex = 1) ) + "\n")
 
 
 
 
-def PRIM(graph,startVertex):
+def PrimsAlgorithm(graph, startVertex):
     print("\n" + "COMPUTING MST .... " + "\n")
     cost = 0
     visited = [ startVertex ]
@@ -71,7 +71,7 @@ def PRIM(graph,startVertex):
         if flag==True :
             cutsEdges.sort(key = lambda fn : fn[0])
             edgechosen = cutsEdges[0]
-            cost+=edgechosen[0]
+            cost += edgechosen[0]
             visited.append(edgechosen[2])
             notvisited.remove(edgechosen[2])
 
@@ -79,5 +79,5 @@ def PRIM(graph,startVertex):
 
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     main()
