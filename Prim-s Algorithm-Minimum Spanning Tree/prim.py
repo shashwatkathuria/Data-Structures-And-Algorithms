@@ -10,6 +10,8 @@ class Edge:
         self.start = start
         self.end = end
         self.weight = weight
+    def __str__(self):
+        return "Start = {}  End = {}  Weight = {}".format(self.start, self.end, self.weight)
 
 class Graph:
 
@@ -38,15 +40,17 @@ class Graph:
 def main():
 
     file = open("PRIM.txt", "r")
-    t = file.readline().split(" ")
-    noOfVertices = int(t[0])
-    noOfEdges = int(t[1])
+    graphInfo = file.readline().split(" ")
+    noOfVertices = int(graphInfo[0])
+    noOfEdges = int(graphInfo[1])
     g = Graph(noOfVertices)
-    edges = []
+
     for i in range(noOfEdges):
         tempEdge = file.readline().split(" ")
         e = Edge(start = int(tempEdge[0]), end = int(tempEdge[1]), weight = int(tempEdge[2]))
         g.addEdge(e)
+        print(e)
+
 
 
 # visited=[500]
