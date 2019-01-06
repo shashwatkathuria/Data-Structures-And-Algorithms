@@ -13,25 +13,41 @@ class Edge:
 
 class Graph:
 
-    def __init__(self):
+    def __init__(self, noOfVertices):
         self.edges  = []
-        self.vertices = list(range(1,501))
+        self.vertices = list(range(1,noOfVertices))
+        self.noOfEdges = 0
 
     def addEdge(self, edge):
         self.edges.append(edge)
+        self.noOfEdges += 1
 
 
 
+# def main():
+#
+#     file=open("PRIM.txt","r")
+#     t=file.readline().split(" ")
+#     n=int(t[0])
+#     m=int(t[1])
+#     edges=[]
+#     for i in range(m):
+#         t=file.readline().split(" ")
+#         edges.append([int(t[0]),int(t[1]),int(t[2])])
 
+def main():
 
-file=open("PRIM.txt","r")
-t=file.readline().split(" ")
-n=int(t[0])
-m=int(t[1])
-edges=[]
-for i in range(m):
-    t=file.readline().split(" ")
-    edges.append([int(t[0]),int(t[1]),int(t[2])])
+    file = open("PRIM.txt", "r")
+    t = file.readline().split(" ")
+    noOfVertices = int(t[0])
+    noOfEdges = int(t[1])
+    g = Graph(noOfVertices)
+    edges = []
+    for i in range(noOfEdges):
+        tempEdge = file.readline().split(" ")
+        e = Edge(start = int(tempEdge[0]), end = int(tempEdge[1]), weight = int(tempEdge[2]))
+        g.addEdge(e)
+
 
 # visited=[500]
 # notvisited=list(range(1,500,1))
