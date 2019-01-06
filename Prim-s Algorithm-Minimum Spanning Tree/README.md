@@ -1,8 +1,10 @@
 AIM
+-----------------------------------
 
 The given program illustrates the Prim's Algorithm to compute the cost of the minimum spanning tree.
 
 INTRODUCTION
+--------------------
 
 The minimum spanning tree (MST) problem, in addition to enjoying several applications,
 is a uniquely great problem for the study of greedy algorithms. Unusually, several 
@@ -12,6 +14,7 @@ beautiful structure of cuts in graphs, while its blazingly fast implementation r
 a deft application of the heap data structure.
 
 INPUT FILE FORMAT
+-----------------
 
 The first line of the file contains the number of vertices and the number of edges in the 
 input graph.The lines afterwards indicate the edges in the format:- 
