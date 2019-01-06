@@ -2,7 +2,7 @@
 """
 Created on Fri Jul  6 20:28:19 2018
 
-@author: shash
+@author: Shashwat Kathuria
 """
 
 file=open("PRIM.txt","r")
