@@ -40,33 +40,34 @@ def main():
         g.addEdge(e)
         print("EDGE ADDED :  " + str(e))
 
-    print("Minimum Cost Spanning Tree Cost:" + str(PRIM(g)))
+    print("Minimum Cost Spanning Tree Cost:" + str(PRIM(graph = g, startVertex = 1)))
 
 
 
 
-def PRIM(graph):
+def PRIM(graph,startVertex):
+    print(" COMPUTING MST .... ")
     cost = 0
-    visited=[500]
+    visited=[startVertex]
     notvisited=list(range(1,500,1))
     edges = graph.edges
     flag=True
     while flag!=False:
-     minimizethis=[]
-     flag=False
-     for edge in edges:
-        if edge.start in visited and edge.end in notvisited:
-            flag=True
-            minimizethis.append((edge.weight, edge.start, edge.end))
-        if edge.start in notvisited and edge.end in visited:
-            flag=True
-            minimizethis.append((edge.weight, edge.end, edge.start))
-     if flag==True :
-      minimizethis.sort()
-      edgechosen=minimizethis[0]
-      cost+=edgechosen[0]
-      visited.append(edgechosen[2])
-      notvisited.remove(edgechosen[2])
+        minimizethis=[]
+        flag=False
+        for edge in edges:
+            if edge.start in visited and edge.end in notvisited:
+                flag=True
+                minimizethis.append((edge.weight, edge.start, edge.end))
+            if edge.start in notvisited and edge.end in visited:
+                flag=True
+                minimizethis.append((edge.weight, edge.end, edge.start))
+        if flag==True :
+            minimizethis.sort()
+            edgechosen=minimizethis[0]
+            cost+=edgechosen[0]
+            visited.append(edgechosen[2])
+            notvisited.remove(edgechosen[2])
     return cost
 
 
