@@ -26,6 +26,27 @@ class UndirectedGraph:
     def addEdge(self, edge):
         self.edges.append(edge)
         self.noOfEdges += 1
+
+class ClusterGraph:
+
+    def __init__(self, noOfVertices):
+        self.edges = []
+        self.noOfVertices = noOfVertices
+        self.clusters = []
+        self.verticeTraversed =
+        for i in range(0, noOfvertices + 1, 1):
+            self.clusters.append([i])
+
+    def addEdge(self, edge):
+        self.edges.append(edge)
+        
+    def mergeClusters(self, listi, listj):
+        ltemp=listi[:]+listj[:]
+        self.clusters.remove(listj)
+        self.clusters.remove(listi)
+        self.clusters.append(ltemp)
+
+
 # path=False
 # def DFS(graph,vertex,vertex2):
 #   global path
@@ -67,11 +88,7 @@ class UndirectedGraph:
 # l=[]
 # for i in range(0,501,1):
 #     l.append([i])
-# def Merge(listi,listj):
-#     ltemp=listi[:]+listj[:]
-#     l.remove(listj)
-#     l.remove(listi)
-#     l.append(ltemp)
+
 
 def main():
     file = open("CLUSTERING_1.txt","r")
