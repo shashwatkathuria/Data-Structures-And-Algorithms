@@ -48,26 +48,30 @@ def main():
 def PRIM(graph,startVertex):
     print(" COMPUTING MST .... ")
     cost = 0
-    visited=[startVertex]
-    notvisited=list(range(1,500,1))
+    visited = [ startVertex ]
+    notvisited = list(range(1, 500, 1))
     edges = graph.edges
-    flag=True
-    while flag!=False:
-        minimizethis=[]
-        flag=False
+    flag = True
+
+    while flag != False:
+        cutsEdges = []
+        flag = False
         for edge in edges:
             if edge.start in visited and edge.end in notvisited:
-                flag=True
-                minimizethis.append((edge.weight, edge.start, edge.end))
+                flag = True
+                cutsEdges.append((edge.weight, edge.start, edge.end))
+
             if edge.start in notvisited and edge.end in visited:
                 flag=True
-                minimizethis.append((edge.weight, edge.end, edge.start))
+                cutsEdges.append((edge.weight, edge.end, edge.start))
+
         if flag==True :
-            minimizethis.sort()
-            edgechosen=minimizethis[0]
+            cutsEdges.sort(key = lambda fn : fn[0])
+            edgechosen = cutsEdges[0]
             cost+=edgechosen[0]
             visited.append(edgechosen[2])
             notvisited.remove(edgechosen[2])
+            
     return cost
 
 
