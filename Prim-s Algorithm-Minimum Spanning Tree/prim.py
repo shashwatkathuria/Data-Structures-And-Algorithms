@@ -26,17 +26,6 @@ class Graph:
 
 
 
-# def main():
-#
-#     file=open("PRIM.txt","r")
-#     t=file.readline().split(" ")
-#     n=int(t[0])
-#     m=int(t[1])
-#     edges=[]
-#     for i in range(m):
-#         t=file.readline().split(" ")
-#         edges.append([int(t[0]),int(t[1]),int(t[2])])
-
 def main():
 
     file = open("PRIM.txt", "r")
@@ -49,39 +38,38 @@ def main():
         tempEdge = file.readline().split(" ")
         e = Edge(start = int(tempEdge[0]), end = int(tempEdge[1]), weight = int(tempEdge[2]))
         g.addEdge(e)
-        print(e)
+        print("EDGE ADDED :  " + str(e))
+
+    print("Minimum Cost Spanning Tree Cost:" + str(PRIM(g)))
 
 
 
-# visited=[500]
-# notvisited=list(range(1,500,1))
-# cost=0
-# def PRIM(edges):
-#  #   print(visited)
-#     global cost
-#     flag=True
-#     while flag!=False:
-#      minimizethis=[]
-#      flag=False
-#      for edge in edges:
-#         if edge[0] in visited and edge[1] in notvisited:
-#         #    print(edge)
-#             flag=True
-#             minimizethis.append((edge[2],edge[0],edge[1]))
-#         if edge[0] in notvisited and edge[1] in visited:
-#         #    print(edge)
-#             flag=True
-#             minimizethis.append((edge[2],edge[1],edge[0]))
-#      if flag==True :
-#       minimizethis.sort()
-#       edgechosen=minimizethis[0]
-#       cost+=edgechosen[0]
-#       visited.append(edgechosen[2])
-#       notvisited.remove(edgechosen[2])
-#     return(cost)
-# print("Minimum Cost Spanning Tree Cost:")
-# print(PRIM(edges))
-#
+
+def PRIM(graph):
+    cost = 0
+    visited=[500]
+    notvisited=list(range(1,500,1))
+    edges = graph.edges
+    flag=True
+    while flag!=False:
+     minimizethis=[]
+     flag=False
+     for edge in edges:
+        if edge.start in visited and edge.end in notvisited:
+            flag=True
+            minimizethis.append((edge.weight, edge.start, edge.end))
+        if edge.start in notvisited and edge.end in visited:
+            flag=True
+            minimizethis.append((edge.weight, edge.end, edge.start))
+     if flag==True :
+      minimizethis.sort()
+      edgechosen=minimizethis[0]
+      cost+=edgechosen[0]
+      visited.append(edgechosen[2])
+      notvisited.remove(edgechosen[2])
+    return cost
+
+
 
 if __name__=="__main__":
     main()
