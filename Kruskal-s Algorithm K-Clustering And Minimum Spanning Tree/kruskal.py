@@ -33,19 +33,27 @@ class ClusterGraph:
         self.edges = []
         self.noOfVertices = noOfVertices
         self.clusters = []
-        self.verticeTraversed =
+        self.booleanVerticeTraversed = {}
+
+        for i in range(1, self.noOfVertices + 1, 1):
+            self.booleanVerticeTraversed[i] = [False]
         for i in range(0, noOfvertices + 1, 1):
             self.clusters.append([i])
 
     def addEdge(self, edge):
         self.edges.append(edge)
-        
+
     def mergeClusters(self, listi, listj):
         ltemp=listi[:]+listj[:]
         self.clusters.remove(listj)
         self.clusters.remove(listi)
         self.clusters.append(ltemp)
 
+    def findClusterIndex(self, element):
+        for i in range( len(self.clusters) ):
+            if element in l[i]:
+                break
+        return i
 
 # path=False
 # def DFS(graph,vertex,vertex2):
@@ -112,11 +120,7 @@ def main():
 
 
 #
-# def findIndex(element):
-#     for i in range(len(l)):
-#      if element in l[i]:
-#         break
-#     return i
+
 # graph={}
 # for i in range(1,501,1):
 #     graph[i]=[False]
