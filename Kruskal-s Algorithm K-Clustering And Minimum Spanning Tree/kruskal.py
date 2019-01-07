@@ -51,46 +51,33 @@ class ClusterGraph:
 
     def findClusterIndex(self, element):
         for i in range( len(self.clusters) ):
-            if element in l[i]:
+            if element in self.clusters[i]:
                 break
         return i
 
-# path=False
 # def DFS(graph,vertex,vertex2):
-#   global path
-#   path=False
-#  # print(graph)
-#   for key in graph:
-#  #     print(key)
-#       graph[key][0]=False
+#   for key in graph.booleanVerticeTraversed:
+#       graph.booleanVerticeTraversed[key][0]=False
 #   def DFS1(graph,vertex,vertex2):
-#      global path
-#      (graph[vertex])[0]=True
+#      (graph.booleanVerticeTraversed[vertex])[0]=True
 #      flag=True
-#      neighbours=(graph[vertex])[1:]
+#      neighbours=(graph.booleanVerticeTraversed[vertex])[1:]
 #      if neighbours == []:
-# #         print("No such path")
-#          path = False
-#          return
+#          return False
 #      for neighbour in neighbours:
 #            if graph[neighbour][0]==False:
 #                flag=False
 #      if flag==True:
-#            path =  False
-# #           print("There is no such path")
-#            return
+#            return False
 #
 #      for neighbour in neighbours:
 #              if (graph[neighbour])[0]==False:
 #                if neighbour==vertex2:
-#   #                 print(neighbour)
-#                    path=True
-# #                   print("Yes,there is a path")
-#                    return
+#                    return True
 #                else:
 #                    DFS1(graph,neighbour,vertex2)
-#   DFS1(graph,vertex,vertex2)
-#   return path
+#
+#   return DFS1(graph,vertex,vertex2)
 #
 #
 # l=[]
@@ -103,15 +90,15 @@ def main():
     noOfVertices = int(file.readline())
     noOfEdges = ( noOfVertices * (noOfVertices - 1) ) / 2
 
-    g = UndirectedGraph(noOfVertices)
+    originalGraph = UndirectedGraph(noOfVertices)
 
     for i in range(1, noOfEdges + 1, 1):
         tempEdge = file.readline().split(" ")
         edge = Edge( u = int(tempEdge[0]), v = int(tempEdge[1]), distance = int(tempEdge[2]) )
-        g.addEdge(edge)
+        originalGraph.addEdge(edge)
         print(str(edge) + "\n" + str(i))
 
-    g.edges.sort(key = lambda fn : fn.distance)
+    originalGraph.edges.sort(key = lambda fn : fn.distance)
 
 
     # # edges=[[distance,vertex1,vertex2]]
@@ -134,29 +121,27 @@ def main():
 #             print(k)
 #             edge=edges[k]
 #
-#             vertex1=edge[1]
-#             vertex2=edge[2]
-# #            try:
+#             vertex1 = edge.u
+#             vertex2 = edge.v
 #             if DFS(graph,vertex1,vertex2)==False:
-#               graph[vertex1].append(vertex2)
-#               graph[vertex2].append(vertex1)
-#               cost+=edge[0]
-#               s1+=1
+#               graph.booleanVerticeTraversed[vertex1].append(vertex2)
+#               graph.booleanVerticeTraversed[vertex2].append(vertex1)
+#               cost += edge.distance
+#               s1 += 1
 #             else:
-#                 minimizethis.append(edge[0])
+#                 minimizethis.append(edge.distance)
 #                 continue
-# #            except:
-#             i=findIndex(vertex1)
-#             j=findIndex(vertex2)
+#             i = graph.findClusterIndex(vertex1)
+#             j = graph.findClusterIndex(vertex2)
 #
-#             if i==j:
+#             if i == j:
 #                 continue
 #             else:
-#                 Merge(l[i],l[j])
-#             if len(l)==noOfClusters + 1:
+#                 graph.mergeClusters(l[i],l[j])
+#             if len(graph.clusters) == noOfClusters + 1:
 #                 break
 #     return k
-# print(Clustering(edges,1))
+print(Clustering(edges = originalgraph.edges, noOfClusters = 1))
 
 
 if __name__ == "__main__":
