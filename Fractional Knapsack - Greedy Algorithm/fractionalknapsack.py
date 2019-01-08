@@ -23,6 +23,10 @@ def main():
         ratios.append( [values[i] / weights[i], weights[i], i + 1] )
     ratios.sort()
     ratios.reverse()
+    
+    fractionalKnapsack(size, ratios)
+
+def fractionalKnapsack(size, ratios):
     ans = 0
     items = []
     j = 0
