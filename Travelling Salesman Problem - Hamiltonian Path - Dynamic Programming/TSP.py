@@ -65,21 +65,21 @@ def TSP(noOfCities, cityIndicesExcluding1, citiesDistance):
                 if len(key[0]) == subsetSizeWithout1:
                     b[key] = a[key]
             a = b
-        S = getSubsets(cityIndicesExcluding1, subsetSizeWithout1)
-        for s in S:
-            a[s, 1] = 99999999
+        sizeSpecificSubsets = getSubsets(cityIndicesExcluding1, subsetSizeWithout1)
+        for subset in sizeSpecificSubsets:
+            a[subset, 1] = 99999999
 
-        for s in S:
+        for subset in sizeSpecificSubsets:
             possibilities = []
-            for j in s[1:]:
+            for j in subset[1:]:
                 possibilities = []
-                for k in s:
+                for k in subset:
                     if k != j:
-                        tupleCopy = tupleCopyWithoutElement(s,j)
+                        tupleCopy = tupleCopyWithoutElement(subset, j)
                         possibilities.append( a[tupleCopy, k] + citiesDistance[k, j] )
                 try:
                     minpath = min(possibilities)
-                    a[s, j] = minpath
+                    a[subset, j] = minpath
                 except:
                     continue
 
