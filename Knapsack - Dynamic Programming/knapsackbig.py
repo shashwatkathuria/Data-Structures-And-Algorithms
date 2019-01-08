@@ -25,7 +25,7 @@ def main():
     print(knapsackBig(ans, capacity, noOfItems, weights, values))
 
 def knapsackBig(ans, size, noOfItems, weights, values):
-    print("IN PROCESS...Please wait for counter to reach somewhere near 2000   : " + str(noOfItems)  )
+    print("IN PROCESS...Please wait for counter to reach somewhere near " + str(counterReference) + "   : " + str(noOfItems)  )
     if noOfItems == 0 or size == 0:
         return 0
     if (noOfItems, size) in ans:
