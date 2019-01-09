@@ -36,14 +36,14 @@ def main():
             edgeListCopy1 = edgesList[ : ]
 
             for i in range(noOfVertices - 2):
-                randomEdge=random.choice(edgeListCopy1)
+                randomEdge = random.choice(edgeListCopy1)
 
-                saveVertex,removeVertex=getVertexMergingCriteria(randomEdge)
+                saveVertex, removeVertex = getVertexMergingCriteria( randomEdge )
 
-                edgeListCopy2=edgeListCopy1[:]
+                edgeListCopy2 = edgeListCopy1[:]
 
-                edgeListCopy2.remove(randomEdge)
-                edgeListCopy1.remove(randomEdge)
+                edgeListCopy2.remove( randomEdge )
+                edgeListCopy1.remove( randomEdge )
 
                 for edge in edgeListCopy1:
 
