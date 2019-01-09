@@ -2,7 +2,7 @@
 """
 Created on Sat May 26 17:13:57 2018
 
-@author: shash
+@author: Shashwat Kathuria
 """
 import random
 n=200
@@ -10,7 +10,7 @@ edges=[]
 file=open("kargerMinCut.txt","r")
 i=0
 while i<200:
-    
+
   s=file.readline()
   s=s[0:len(s)-2]
   t=s.split('\t')
@@ -50,7 +50,7 @@ def deleteselfloops():
         if edge[0]==edge[1]:
             edgescopy1.remove(edge)
 
-possibilities=[]    
+possibilities=[]
 
 nchoose2=int(n*(n-1)/2)
 for k in range(nchoose2):
@@ -80,6 +80,5 @@ for k in range(nchoose2):
   deleteselfloops()
 #  print(edgescopy1)
   edgescopy=edgescopy1[:]
- possibilities.append(len(edgescopy1)) 
+ possibilities.append(len(edgescopy1))
 # print(min(possibilities),possibilities[-1])
-
