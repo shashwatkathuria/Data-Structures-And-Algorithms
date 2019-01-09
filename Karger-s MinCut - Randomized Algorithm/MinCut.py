@@ -6,80 +6,76 @@ Created on Sat May 26 17:13:57 2018
 """
 import random
 
-# def main():
-n = 200
-edges = []
-file = open("kargerMinCut.txt", "r")
-i = 0
-while i < 200:
+edgeListCopy1,edgeListCopy2,edgesList = [], [], []
 
-  s = file.readline()[:-2]
-  t = s.split('\t')[:-1]
-  z = t[0]
-  for d in t:
-      if d!=z:
-           edges.append((int(z),int(d)))
+def main():
+        global edgeListCopy1, edgeListCopy2, edgesList
+        noOfVertices = 200
+        edgesList = []
+        file = open("kargerMinCut.txt", "r")
 
-  i=i+1
-#edges=[(1,2),(1,3),(2,3),(3,4),(2,4),(1,4)]
-#n=4
-def getMergedVertex(edge):
+        for i in range(noOfVertices):
+          t = file.readline()[ : - 2 ].split( '\t' )[ : - 1 ]
+          Vertex = t[0]
+          neighboursOfVertex = t[1:]
+          for neighbour in neighboursOfVertex :
+              edgesList.append( ( int(Vertex), int(neighbour) ) )
+
+        for edge in edgesList:
+            duplicateEdge = ( edge[1], edge[0] )
+            if duplicateEdge in edgesList:
+                edgesList.remove(duplicateEdge)
+
+        possibilities = []
+
+        nchoose2 = int( noOfVertices * ( noOfVertices - 1 ) / 2 )
+
+        for k in range(nchoose2):
+
+            print(str(k) + " LOOPS OUT OF " + str(nchoose2) + " COMPLETED (N choose 2).\n")
+            edgeListCopy1 = edgesList[ : ]
+
+            for i in range(noOfVertices - 2):
+                randomEdge=random.choice(edgeListCopy1)
+
+                saveVertex,removeVertex=getVertexMergingCriteria(randomEdge)
+
+                edgeListCopy2=edgeListCopy1[:]
+
+                edgeListCopy2.remove(randomEdge)
+                edgeListCopy1.remove(randomEdge)
+
+                for edge in edgeListCopy1:
+
+                        if removeVertex == edge[0]:
+                            shiftVertexPosition = edge[1]
+                            edgeListCopy2.remove(edge)
+                            modifiedMergedEdge = ( saveVertex, shiftVertexPosition )
+                            edgeListCopy2.append( modifiedMergedEdge )
+
+                        if removeVertex == edge[1]:
+                            shiftVertexPosition = edge[0]
+                            edgeListCopy2.remove(edge)
+                            modifiedMergedEdge = ( saveVertex, shiftVertexPosition )
+                            edgeListCopy2.append( modifiedMergedEdge )
+
+                deleteSelfLoops()
+                edgeListCopy1 = edgeListCopy2[:]
+            possibilities.append(len(edgeListCopy2))
+            print("MinCut obtained till now : " + str(min(possibilities)) + "\t\tLast added MinCut :" + str(possibilities[ - 1 ]) + "\n\n ")
+
+def getVertexMergingCriteria(edge):
     if edge[0] > edge[1]:
         return edge[1], edge[0]
     else:
         return edge[0], edge[1]
 
-for edge in edges:
-    t = (edge[1], edge[0])
-    if t in edges:
-        edges.remove(t)
-
-
-def deleteMultipleEdges(t):
-    for i in range(n**2):
-      try:
-        edgescopy1.remove(t)
-      except:
-        break
-    for i in range(n**2):
-      try:
-        edgescopy.remove(t)
-      except:
-        break
 def deleteSelfLoops():
-    temp=edgescopy1[:]
+    global edgeListCopy1, edgeListCopy2, edgesList
+    temp = edgeListCopy2[:]
     for edge in temp:
-        if edge[0]==edge[1]:
-            edgescopy1.remove(edge)
+        if edge[0] == edge[1]:
+            edgeListCopy2.remove(edge)
 
-possibilities=[]
-
-nchoose2=int(n*(n-1)/2)
-for k in range(nchoose2):
- print(k)
- edgescopy=edges[:]
- for i in range(n-2):
-  t=random.choice(edgescopy)
-  keepthis,removethis=getMergedVertex(t)
-#  print(keepthis,removethis)
-  edgescopy1=edgescopy[:]
-  edgescopy1.remove(t)
-  edgescopy.remove(t)
-  for edge in edgescopy:
-    if removethis in edge:
-        for vertex in edge:
-            if vertex!=removethis:
-                shiftthis=vertex
-        edgescopy1.remove(edge)
-#        print(edge)
-#        print(shiftthis,keepthis,removethis)
-        appendthis=(keepthis,shiftthis)
-#        print(appendthis)
-#        print()
-#        print()
-        edgescopy1.append(appendthis)
-  deleteSelfLoops()
-#  print(edgescopy1)
-  edgescopy=edgescopy1[:]
- possibilities.append(len(edgescopy1))
-# print(min(possibilities),possibilities[-1])
+if __name__ == "__main__":
+     main()
