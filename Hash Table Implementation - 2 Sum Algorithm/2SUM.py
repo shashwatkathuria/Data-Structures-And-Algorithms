@@ -8,7 +8,7 @@ hashTable = [ [0] ] * 111827
 
 def main():
 
-    file = open("2SUM.txt", "r")
+    file = open(" 2SUM.txt ", "r")
 
     listOfElements = []
     for i in range(1000000):
