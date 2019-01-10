@@ -4,7 +4,7 @@ Created on Fri Jul  6 14:30:13 2018
 
 @author: Shashwat Kathuria
 """
-hashTable = [ [0] ] * 111827
+hashTable = [ [0] ] * 111827 # Prime number not close to a power of 2 or 10
 
 def main():
 
