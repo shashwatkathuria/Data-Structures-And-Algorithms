@@ -6,31 +6,6 @@ Created on Wed Jul 11 16:49:45 2018
 """
 import random
 import math
-isSatisfying = False
-class Clause:
-
-    def __init__(self, firstLiteral, secondLiteral):
-
-        self.firstLiteral = firstLiteral
-        self.secondLiteral = secondLiteral
-
-    def __str__(self):
-        return str(self.firstLiteral) + " OR " + str(self.secondLiteral)
-
-    def isSatisfyingCriteria(self):
-
-           if self.firstLiteral < 0:
-               boolean1 = not( answers[ abs(self.firstLiteral) ] )
-           else:
-               boolean1 = answers[ self.firstLiteral ]
-
-           if self.secondLiteral < 0:
-               boolean2 = not( answers[ abs(self.secondLiteral) ] )
-           else:
-               boolean2 = answers[ self.secondLiteral ]
-
-           return boolean1 or boolean2
-
 def main():
     file = open("2SAT1.txt", "r")
     noOfClauses = int( file.readline() )
@@ -55,6 +30,7 @@ def main():
 
 
     twoNSquared = 2 * (noOfClauses ** 2)
+    isSatisfying = False
     for k in range( int( math.log(noOfClauses, 2) ) ):
 
         print(k)
@@ -87,6 +63,30 @@ def main():
 
     if isSatisfying == False:
         print("The instance is not satisfiable")
+        
+class Clause:
+
+    def __init__(self, firstLiteral, secondLiteral):
+
+        self.firstLiteral = firstLiteral
+        self.secondLiteral = secondLiteral
+
+    def __str__(self):
+        return str(self.firstLiteral) + " OR " + str(self.secondLiteral)
+
+    def isSatisfyingCriteria(self):
+
+           if self.firstLiteral < 0:
+               boolean1 = not( answers[ abs(self.firstLiteral) ] )
+           else:
+               boolean1 = answers[ self.firstLiteral ]
+
+           if self.secondLiteral < 0:
+               boolean2 = not( answers[ abs(self.secondLiteral) ] )
+           else:
+               boolean2 = answers[ self.secondLiteral ]
+
+           return boolean1 or boolean2
 
 if __name__ == "__main__":
     main()
