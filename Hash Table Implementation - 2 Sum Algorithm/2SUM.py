@@ -13,7 +13,7 @@ def main():
     listOfElements = []
     for i in range(1000000):
         element = int( file.readline() )
-        listOfElements.append([element, hashFunction(element)])
+        listOfElements.append( [element, hashFunction(element)] )
         print("READING ELEMENT NUMBER " + str(i + 1))
 
 
