@@ -2,76 +2,88 @@
 """
 Created on Wed Jul 11 16:49:45 2018
 
-@author: shash
+@author: Shashwat Kathuria
 """
 import random
 import math
-satisfiable1=False
-#random.seed(0)
-#clauses=[[-1,2],[3,4],[-3,2],[-3,-4],[-3,4]]
-#n=4
-#options=[1,2,3,4]
-file=open("2SAT1.txt")
-n=int(file.readline())
-clauses=[]
-for i in range(n):
-    t=file.readline().split()
-    t=[int(t[0]),int(t[1])]
-    clauses.append(t)
+isSatisfying = False
+class Clause:
 
-ans=[]
-ans.append("NaN")
-for x in range(1,n+1):
-    x=random.random()
-    if x>0.5:
-        ans.append(True)
+    def __init__(self, firstLiteral, secondLiteral):
+
+        self.firstLiteral = firstLiteral
+        self.secondLiteral = secondLiteral
+
+    def __str__(self):
+        return str(self.firstLiteral) + " OR " + str(self.secondLiteral)
+
+    def isSatisfyingCriteria(self):
+
+           if self.firstLiteral < 0:
+               boolean1 = not( answers[ abs(self.firstLiteral) ] )
+           else:
+               boolean1 = answers[ self.firstLiteral ]
+
+           if self.secondLiteral < 0:
+               boolean2 = not( answers[ abs(self.secondLiteral) ] )
+           else:
+               boolean2 = answers[ self.secondLiteral ]
+
+           return boolean1 or boolean2
+
+
+file = open("2SAT1.txt", "r")
+noOfClauses = int( file.readline() )
+
+clauses = []
+for i in range(noOfClauses):
+    clauseLiteralsInfo = file.readline().split()
+    clause = Clause( firstLiteral = int(clauseLiteralsInfo[0]), secondLiteral = int(clauseLiteralsInfo[1]))
+    clauses.append(clause)
+
+
+
+answers = []
+answers.append( "NaN" )
+for x in range(1, noOfClauses + 1):
+    x = random.random()
+    if x > 0.5:
+        answers.append(True)
     else:
-        ans.append(False)
+        answers.append(False)
 
-def satisfiable(x):
-       if x[0]<0:
-           ans1=not(ans[abs(x[0])])
-       else:
-           ans1=ans[x[0]]
-  #         print(ans1)
-       if x[1]<0:
-           ans2=not(ans[abs(x[1])])
-  #         print(ans2)
-       else:
-           ans2=ans[x[1]]
-          
-       return ans1 or ans2
-twonsquared=2*(n**2)
-for k in range(int(math.log(n,2))):
-   print(k)
-   for j in range(twonsquared):       
-#      print(j)
-      flag=True
-      s1=0        
-      for x in clauses:
-#        print(x,satisfiable(x))
-        y=random.choices(x)[0]
-        if satisfiable(x)==False:
-          flag=False
-          ans[abs(y)]=not(ans[abs(y)])
-          break
-        else:
-            s1+=1
-      print(s1)
-      if flag==True:
-          satisfiable1=True
-          break
-         
-      
-   if satisfiable1==True:
-        print("Instance is satisfiable")
-        print(ans)
+
+
+twoNSquared = 2 * (noOfClauses ** 2)
+for k in range( int( math.log(noOfClauses, 2) ) ):
+
+    print(k)
+
+    for j in range(twoNSquared):
+
+        flag = True
+        noOfSatisfyingClauses = 0
+        for clause in clauses:
+            randomlyChosenLiteral = random.choices([clause.firstLiteral,clause.secondLiteral])[0]
+            if clause.isSatisfyingCriteria() == False:
+                flag = False
+                answers[ abs(randomlyChosenLiteral) ] = not( answers[ abs(randomlyChosenLiteral) ] )
+                break
+            else:
+                noOfSatisfyingClauses += 1
+
+        print("The number of clauses satisfying criteria till now (of the ones which have been checked) is :" + str(noOfSatisfyingClauses) )
+
+        if flag == True:
+            isSatisfying = True
+            break
+
+    if isSatisfying == True:
+        print("The answers of the literals respectively are as follows :- \n\n")
+        for i in range(1, len(answers),1):
+            print("Literal " + str(i) + " : " + str(answers[i]) )
+        print("The instance is satisfiable")
         break
-   
-    
-if satisfiable1==False:
+
+if isSatisfying == False:
     print("The instance is not satisfiable")
-    
-    
-    
-    
