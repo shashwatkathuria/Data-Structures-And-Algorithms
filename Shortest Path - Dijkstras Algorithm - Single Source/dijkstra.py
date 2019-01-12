@@ -2,48 +2,81 @@
 """
 Created on Thu Jul  5 15:22:57 2018
 
-@author: shash
+@author: Shashwat Kathuria
 """
-#d={}
-#edges=[[1,2,1],[1,3,4],[2,3,2],[2,4,6],[3,4,3]]
-#d[1]=[(2,1),(3,4)]
-#d[2]=[(3,2),(4,6)]
-#d[3]=[(4,3)]
-#d[4]=[]
 # This program is for a directed graph
-file=open("dijkstraData.txt",'r')
-edges=[]
-for i in range(200):
- s=file.readline()
- s=s[:len(s)-2]
- y=s.split('\t')
- vertex=int(y[0])
- y=y[1:]
- for edge in y:
-    t=edge.split(',')
-    edges.append([vertex,int(t[0]),int(t[1])])
-visited=[1]
-notvisited=list(range(2,201,1))
-distances=([0]*2)
-distances+=[10000]*199
-def Dijkstra(edges,vertex):
-    minimizethis=[]
-    flag=True
-    while flag!=False:
-      flag=False
-      minimizethis=[]
-      for edge in edges:
-          if (edge[0] in visited) and (edge[1] in notvisited):
-            flag=True
-            dijkstracriterion=distances[edge[0]]+edge[2]
-            minimizethis.append([dijkstracriterion,edge[0],edge[1]])
-      if flag==True:
-       print(minimizethis)
-       minimizethis.sort()
-       minimumdijkstra=minimizethis[0]
-       distances[minimumdijkstra[2]]=minimumdijkstra[0]
-       visited.append(minimumdijkstra[2])
-       notvisited.remove(minimumdijkstra[2])
-      else:
-       return    
-Dijkstra(edges,1)        
+edges = []
+startVertex = 1
+noOfVertices = 200
+visitedVertices = [ startVertex ]
+notVisitedVertices = list(range(2, noOfVertices + 1, 1))
+distances = [ 0 ] * 2
+distances += [10000] * (noOfVertices - 1)
+
+class DirectedEdge:
+
+    def __init__(self, startVertex, endVertex, edgeWeight):
+        self.startVertex = startVertex
+        self.endVertex = endVertex
+        self.edgeWeight = edgeWeight
+
+    def __str__(self):
+        return "Edge from " + str(self.startVertex) + " to " + str(self.endVertex) + " Weight " + str(self.edgeWeight)
+
+    def setDijkstraCriterion(self, dijkstraCriterion):
+        self.dijkstraCriterion = dijkstraCriterion
+
+def main():
+
+    file = open("dijkstraData.txt", 'r')
+
+    for i in range(noOfVertices):
+
+        vertexAndEdgesInfo = file.readline().split('\t')
+        vertex = int( vertexAndEdgesInfo[0] )
+        edgesInfo = vertexAndEdgesInfo[1 : -1]
+
+        for edge in edgesInfo:
+
+            edgeInfo = edge.split(',')
+            directedEdge = DirectedEdge(startVertex = vertex, endVertex = int( edgeInfo[0] ), edgeWeight = int( edgeInfo[1] ))
+            print("ADDED EDGE : " + str(directedEdge) )
+            edges.append( directedEdge )
+
+    dijkstra(edges)
+
+    print("\n\nTHE SHORTEST PATHS ARE : \n\n")
+
+    for i in range(1, len(distances)):
+        print("The shortest path from " + str(startVertex) + " to " + str(i) + " has distance : " + str(distances[i]) )
+
+    print("\n")
+
+def dijkstra(edges):
+    flag = True
+    while flag != False:
+        flag = False
+        minimizingCandidateEdges = []
+
+        for directedEdge in edges:
+
+            if (directedEdge.startVertex in visitedVertices) and (directedEdge.endVertex in notVisitedVertices):
+                flag = True
+                dijkstraCriterion = distances[ directedEdge.startVertex ] + directedEdge.edgeWeight
+                directedEdge.setDijkstraCriterion(dijkstraCriterion)
+                minimizingCandidateEdges.append( directedEdge )
+            else:
+                continue
+
+        if flag == True:
+            minimizingCandidateEdges.sort(reverse = False, key = lambda x: x.dijkstraCriterion)
+            minimumDijkstraCriterionEdge = minimizingCandidateEdges[0]
+            distances[ minimumDijkstraCriterionEdge.endVertex ] = minimumDijkstraCriterionEdge.dijkstraCriterion
+            visitedVertices.append(minimumDijkstraCriterionEdge.endVertex)
+            notVisitedVertices.remove(minimumDijkstraCriterionEdge.endVertex)
+        else:
+            return
+
+
+if __name__ == "__main__":
+    main()
