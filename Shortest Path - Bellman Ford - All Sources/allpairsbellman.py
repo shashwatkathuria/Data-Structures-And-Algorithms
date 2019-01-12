@@ -6,6 +6,9 @@ Created on Mon Jul  9 07:31:55 2018
 """
 
 #ALL VERTICES SHORTEST PATHS
+#Assignment answers
+#g3=-19
+#g2,g1=negative cycle
 
 def main():
 
