@@ -1,6 +1,6 @@
 --------------------------------
 
-INSTRUCTIONS TO RUN THE PROGRAM
+# INSTRUCTIONS TO RUN THE PROGRAM
 
 --------------------------------
 
@@ -18,7 +18,7 @@ INSTRUCTIONS TO RUN THE PROGRAM
 
 ---------------------------
 
-COMPONENTS OF THE FOLDER
+# COMPONENTS OF THE FOLDER
 
 ---------------------------
 
@@ -46,13 +46,13 @@ COMPONENTS OF THE FOLDER
 
 ---------------------------------------------
 
-TIME COMPLEXITIES
+# TIME COMPLEXITIES
 
 ---------------------------------------------
 
 
 
-1) Class Person
+# 1) Class Person
 
 
 
@@ -127,7 +127,7 @@ TIME COMPLEXITIES
 
 
 
-2) Class PersonDoublyLinkedList
+# 2) Class PersonDoublyLinkedList
 
 
 
