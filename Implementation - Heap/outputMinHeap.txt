@@ -1,0 +1,50 @@
+
+Enter 1 for minHeap and 2 for maxHeap : 1
+THE INPUT.TXT IS SUCCESSFULLY INSERTED INTO THE HEAP
+PLEASE CHOOSE AMONG THE FOLLOWING OPERATIONS TO DO AS YOU LIKE
+___________________________________________________________________________________________________
+--------------------------------------------------------
+HEAP MENU
+--------------------------------------------------------
+1. Insert an element into Heap
+2. Delete root from Heap
+3. Print the Heap top 3 rows
+4. Get the number of elements in the heap
+5. Get the value root of the heap
+0. Exit
+Enter a choice:  3
+--------------------------------------------------------
+TOP 3 ROWS OF HEAP:
+
+2
+5  3
+9  6  8  4
+
+___________________________________________________________________________________________________
+--------------------------------------------------------
+HEAP MENU
+--------------------------------------------------------
+1. Insert an element into Heap
+2. Delete root from Heap
+3. Print the Heap top 3 rows
+4. Get the number of elements in the heap
+5. Get the value root of the heap
+0. Exit
+Enter a choice:  4
+--------------------------------------------------------
+
+The number of elements stored in the heap are: 7
+___________________________________________________________________________________________________
+--------------------------------------------------------
+HEAP MENU
+--------------------------------------------------------
+1. Insert an element into Heap
+2. Delete root from Heap
+3. Print the Heap top 3 rows
+4. Get the number of elements in the heap
+5. Get the value root of the heap
+0. Exit
+Enter a choice:  0
+--------------------------------------------------------
+BYE!!!
+___________________________________________________________________________________________________
