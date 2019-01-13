@@ -3,8 +3,10 @@
 # INSTRUCTIONS TO RUN THE PROGRAM
 ------------------------------------
 
-The input array of a 100,000 entries is already provided in IntegerArray.txt.\n
-To run the program, the following command is to be executed:\n
+The input array of a 100,000 entries is already provided in IntegerArray.txt.
+
+To run the program, the following command is to be executed:
+
           python bubblesort.py
 
 
