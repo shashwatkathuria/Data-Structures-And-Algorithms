@@ -81,21 +81,21 @@ class Trie
           to insert the given word as well as check in the initial step whether the word
           was already in the trie or not.
 
-7)bool deleteWord()
+7) bool deleteWord()
 
           O(length of word)
 
           complexity as takes n number of steps to go deeper inside the trie in order
           to delete the given word in the worst case(if the word was present in the trie).
 
-8)void freeNode(node *currentNode)
+8) void freeNode(node *currentNode)
 
           O(m * n)        [ where m=number of words to be inserted ]
                           [ where n=maximum length of a word       ]
           complexity as recursively calls itself until all the nodes in the trie are
           successfully deleted and freed which is equal to m * n.
 
-9)bool randomInputGenerator()
+9) bool randomInputGenerator()
 
           O(m * n)        [ where m=number of words to be inserted ]
                           [ where n=maximum length of a word       ]
