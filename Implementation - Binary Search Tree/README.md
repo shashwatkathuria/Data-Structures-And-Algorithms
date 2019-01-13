@@ -113,7 +113,7 @@ TIME COMPLEXITIES
           complexity as takes constant number of steps to compare ages(if equal).
 
 
-2)Class BinarySearchTree
+2) Class BinarySearchTree
 
   BinarySearchTree()-->
           
