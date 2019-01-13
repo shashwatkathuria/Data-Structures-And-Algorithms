@@ -1,8 +1,4 @@
-SHASHWAT KATHURIA
-B17CS050
-CSE
-ASSIGNMENT 7
---------------------------------------------------------
+
 LONGEST COMMON SUBSEQUENCE PROBLEM-DYNAMIC PROGRAMMING
 --------------------------------------------------------
 1. "lcs.cpp" contains the program implemented.
@@ -12,7 +8,9 @@ LONGEST COMMON SUBSEQUENCE PROBLEM-DYNAMIC PROGRAMMING
 --------------------------------------------------------
 TIME COMPLEXITY
 --------------------------------------------------------
-void longestCommonSubsequence(string s1,string s2)
+
+ # void longestCommonSubsequence(string s1,string s2)
+    
     O(m*n)   where m = length of string1 , n = length of string2
     The function takes m*n complexity to fill the matrix entries and filling each entry takes
     constant number of steps.Printing also takes m*n complexity and backtraking takes at most
