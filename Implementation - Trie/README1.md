@@ -1,14 +1,8 @@
-_____________________
-SHASHWAT KATHURIA
-B17CS050
-CSE BRANCH
-ASSIGNMENT 5
-_____________________
 
-TRIE
+# TRIE
 _____________________
 ------------------------------------
-INSTRUCTIONS TO RUN THE PROGRAM
+# INSTRUCTIONS TO RUN THE PROGRAM
 ------------------------------------
 1. Run ./a.out in the terminal to run the program and get the output.
 
@@ -17,12 +11,12 @@ INSTRUCTIONS TO RUN THE PROGRAM
    the number of words to generate randomly.
 
 ----------------
-OUTPUT
+# OUTPUT
 ----------------
 --)  "output.txt" contains the output of "trie.cpp".
 _______________________________________________________________________________________
 ------------------------------------
-COMPONENTS OF THE FILE
+# COMPONENTS OF THE FILE
 ------------------------------------
 
 --) || g++ trie.cpp ||
@@ -38,7 +32,7 @@ COMPONENTS OF THE FILE
 
 
 -----------------------------------
-TIME COMPLEXITIES
+# TIME COMPLEXITIES
 ------------------------------------
 
 class Trie
@@ -101,4 +95,4 @@ class Trie
           complexity as randomly generates m number of words whose maximum length is n
           so it follows that the time complexity will be m * n.
 
-----------------------------------X--------------------------------------X-------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
