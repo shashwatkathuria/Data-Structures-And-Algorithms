@@ -49,21 +49,21 @@ class minHeap and class maxHeap
 
 3) int extractRoot()
           
-	  O(1)       
+	   O(1)       
 	  
-	  complexity as returning 1st element takes constant number of steps.
+	   complexity as returning 1st element takes constant number of steps.
 
 4) void removeRoot()
           
-	  O(height)     height = logn if balanced heap |||between logn -> n in general
+	   O(height)     height = logn if balanced heap |||between logn -> n in general
 
-          complexity as takes steps proportional to height of heap in worst case to remove the root.
+           complexity as takes steps proportional to height of heap in worst case to remove the root.
 
 5) void insertElement()
           
-	  O(height)     height = logn if balanced heap |||between logn -> n in general
+	   O(height)     height = logn if balanced heap |||between logn -> n in general
 
-          complexity as takes steps proportional to height of heap in worst case to insert a new element.
+           complexity as takes steps proportional to height of heap in worst case to insert a new element.
 
 
 -------------------------------------------------------------------------------------------------------------------------------------
