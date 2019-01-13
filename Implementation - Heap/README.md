@@ -1,6 +1,5 @@
 
 # MINHEAP AND MAXHEAP
-_____________________
 ------------------------------------
 # INSTRUCTIONS TO RUN THE PROGRAM
 ------------------------------------
@@ -12,7 +11,7 @@ _____________________
 # OUTPUT
 ----------------
 --)  "output.txt" contains the output of "heap.cpp".
-_______________________________________________________________________________________
+
 ------------------------------------
 # COMPONENTS OF THE FILE
 ------------------------------------
@@ -56,14 +55,14 @@ class minHeap and class maxHeap
 
 4) void removeRoot()
           
-	  O(height)     [height = logn if balanced heap |||between logn -> n in general]
+	  O(height)     height = logn if balanced heap |||between logn -> n in general
 
           complexity as takes steps proportional to height of heap in worst case to remove the 
 	  root.
 
 5) void insertElement()
           
-	  O(height)     [height = logn if balanced heap |||between logn -> n in general]
+	  O(height)     height = logn if balanced heap |||between logn -> n in general
 
           complexity as takes steps proportional to height of heap in worst case to insert a 
 	  new element.
