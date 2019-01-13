@@ -52,6 +52,7 @@ class Trie
           to find the given word in the worst case.
 
 3) bool load()
+
           O(m * n)        [ where m=number of words to be inserted ]
                           [ where n=maximum length of a word       ]
           complexity as the maximum length of a word is n letters  so in the worst case
@@ -59,11 +60,13 @@ class Trie
           taken is equal to the length of the word so it follows that the complexity would be m * n.
 
 4) unsigned int size()
+
           O(1)
 
           complexity as takes constant number of steps to return the number of words in trie.
 
 5) bool unload()
+
           O(m * n)        [ where m=number of words to be inserted ]
                           [ where n=maximum length of a word       ]
           complexity as the maximum length of a word is n letters  so in the worst case
@@ -71,6 +74,7 @@ class Trie
           taken is equal to the length of the word so it follows that the complexity would be m * n.
 
 6) bool insertNewWord()
+
           O(length of word)
 
           complexity as takes n number of steps to go deeper inside the trie in order
@@ -78,18 +82,21 @@ class Trie
           was already in the trie or not.
 
 7)bool deleteWord()
+
           O(length of word)
 
           complexity as takes n number of steps to go deeper inside the trie in order
           to delete the given word in the worst case(if the word was present in the trie).
 
 8)void freeNode(node *currentNode)
+
           O(m * n)        [ where m=number of words to be inserted ]
                           [ where n=maximum length of a word       ]
           complexity as recursively calls itself until all the nodes in the trie are
           successfully deleted and freed which is equal to m * n.
 
 9)bool randomInputGenerator()
+
           O(m * n)        [ where m=number of words to be inserted ]
                           [ where n=maximum length of a word       ]
           complexity as randomly generates m number of words whose maximum length is n
