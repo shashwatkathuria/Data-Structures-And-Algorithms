@@ -9,24 +9,26 @@ def main():
     file = open("IntegerArray.txt", "r")
     noOfElements = int(file.readline())
 
-    minHeap = Heap(noOfElements = noOfElements , limitOfRestructuring = noOfElements + 1)
+    minHeap = Heap(noOfElements = 5 * noOfElements , limitOfRestructuring = 30)
 
     for i in range(100000):
         element = int(file.readline())
-        print(element)
         minHeap.insertElement(element = element, i = minHeap.getI())
+    print("\nThe original heap looks as follows : \n\n" + str(minHeap))
+    print("\n\n")
 
     heapSort(minHeap)
 
 def heapSort(minHeap):
     arr = []
-    print(minHeap)
+    print("\n")
     for i in range(minHeap.getI()):
-        # print("ON ITERATION NUMBER : " + str(i + 1) + " OUT OF " + str(minHeap.noOfElements))
-        print(minHeap.extractMinimum())
+        print("ON ITERATION NO : " + str( i) + " OUT OF " + str(100000))
+        arr.append(minHeap.extractMinimum())
         minHeap.removeMinimum()
-
-    # print(arr)
+    print("\n\nThe sorted array looks as follows : \n\n")
+    print(arr)
+    print("\n")
 
 
 class Heap:
