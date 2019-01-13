@@ -19,14 +19,17 @@ def bubbleSort(arr):
     print("\n")
 
     for i in range(len(arr)):
+        swap = False
         print("ON ITERATION NO : " + str(i) + " OUT OF " + str(len(arr)))
         for j in range(i, len(arr)):
             if arr[j] < arr[i]:
+                swap = True
                 arr[j], arr[i] = arr[i], arr[j]
-
+        if swap == False:
+            break
     print("\n\nThe sorted array is as follows : \n\n")
     print(arr)
     print("\n")
-    
+
 if __name__ == "__main__":
     main()
