@@ -13,8 +13,6 @@ OUTPUTS
 ----------------
 
 --)  "outputMenuBased.txt" contains the output of "BSTMenuBased.cpp".
---)  "outputTXTBased.txt" contains the output of "BSTOutputBased.cpp".
---)  "outputEmpiricalAnalysis.txt" contains the output of "BSTOutputBased.cpp".
 
 ------------------------------------
 COMPONENTS OF THE PROGRAM
