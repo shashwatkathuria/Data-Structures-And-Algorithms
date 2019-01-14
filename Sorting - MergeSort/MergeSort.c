@@ -54,7 +54,7 @@ void mergeSort(int arr[], int low, int high)
     // Recursion case
 	  if (low < high)
 	  {
-        // calling merge sort on the two halves of the array and then merging them
+        // Calling merge sort on the two halves of the array and then merging them
 	      int mid = (low + high) / 2;
 		    mergeSort(arr, low, mid);
 	      mergeSort(arr, mid + 1, high);
