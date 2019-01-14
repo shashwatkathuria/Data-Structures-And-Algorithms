@@ -2,14 +2,18 @@
 #include<fstream>
 #include<stdlib.h>
 
+// MERGE SORT USING LINKED LIST
+
 using namespace std;
 
+// Defining node of linked list
 struct node
 {
     long int x;
     struct node *next;
 };
 
+// Declaring functions required
 void mergeSort(node *firstElement, long int size);
 node* divideSubroutine(node *todivide, long int size);
 void merge(node *firstHalf, node *secondHalf, long int size);
@@ -19,6 +23,7 @@ node *temp = NULL;
 
 int main(void)
 {
+    // Reading input elements from the file and storing inside a linked list
     ifstream fin;
     long int noOfElements;
     fin.open("IntegerArray.txt");
@@ -33,7 +38,8 @@ int main(void)
     fin >> noOfElements_;
     noOfElements = atoi(noOfElements_);
 
-    cout<<"\n\n The input array is as follows : \n\n";
+    // Printing input array
+    cout << "\n\n The input linked list is as follows : \n\n";
     for (long int i = 0; i < noOfElements; i++)
     {
         char number_[15];
@@ -60,10 +66,11 @@ int main(void)
 
     }
 
-
+    // Calling merge sort algorithm on linked list
     mergeSort(head, noOfElements);
 
-    cout<<"\n\n The sorted array is as follows : \n\n";
+    // Printing final sorted linked list
+    cout<<"\n\n The sorted linked list is as follows : \n\n";
 
     node *traversePtr = head;
     cout << endl;
@@ -72,24 +79,29 @@ int main(void)
         cout << traversePtr->x << "\t";
         traversePtr = traversePtr->next;
     }
-    cout<<endl<<endl;
+    cout << endl << endl;
 
 }
 
 void mergeSort(node *firstElement, long int size)
 {
+    // Base case
     if (size == 0)
     {
         return;
     }
+    // Recursion case
     else
     {
+        // Getting the pointer to the second half using divideSubroutine function
         node *halfone = NULL;
         node *halftwo = NULL;
         halfone = firstElement;
         halftwo = divideSubroutine(firstElement, size);
 
+        // Calling merge sort on the two halves of the linked list and then merging them
         mergeSort( halfone, size / 2 );
+
         if (size % 2 == 1 && size != 1)
         {
             mergeSort( halftwo, ( size / 2 ) + 1 );
@@ -107,6 +119,7 @@ void mergeSort(node *firstElement, long int size)
 
 node* divideSubroutine(node *todivide, long int size)
 {
+    // Traversing half the size to get pointer to the second half of linked list
     node *secondHalf = todivide;
     long int i = 0;
     while ( i < ( size / 2 ) )
@@ -119,6 +132,7 @@ node* divideSubroutine(node *todivide, long int size)
 
 void merge(node *firstHalf, node *secondHalf, long int size)
 {
+    // Declaring a new temporary linked lis for merging
     long int i1 = 0;
     long int i2 = 0;
     long int size1 = size / 2;
@@ -133,6 +147,7 @@ void merge(node *firstHalf, node *secondHalf, long int size)
     node *temp2 = secondHalf;
     node *templlptr = NULL;
 
+    // Merging the two halves
     while(i1 != size1 && i2 != size2)
     {
         if( temp1->x <= temp2->x)
@@ -179,6 +194,8 @@ void merge(node *firstHalf, node *secondHalf, long int size)
         }
 
     }
+
+    // Appending to the result the left out elements of left half
     if ( i1 != size1 )
     {
         while ( i1 != size1 )
@@ -204,6 +221,7 @@ void merge(node *firstHalf, node *secondHalf, long int size)
         }
     }
 
+    // Appending to the result the left out elements of right half
     if ( i2 != size2 )
     {
         while ( i2 != size2 )
@@ -229,6 +247,7 @@ void merge(node *firstHalf, node *secondHalf, long int size)
         }
     }
 
+    // Writing the elements of the temporary linked list(merged result) back into the original linked list
     long int i = 0;
     node *copy = templl;
     node *paste = firstHalf;
