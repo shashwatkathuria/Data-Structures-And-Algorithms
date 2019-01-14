@@ -3,7 +3,7 @@
 ## ALGORITHMS
 _____________________________________
 
-###1) Sorting
+### 1) Sorting
   - Bubble Sort
   - Heap Sort
   - Insertion Sort
@@ -12,17 +12,17 @@ _____________________________________
   - Selection Sort
   - Shell Sort
   
-###2) Minimum Spanning Tree (Greedy Algorithms)
+### 2) Minimum Spanning Tree (Greedy Algorithms)
   - Prim's Algorithm
   - Kruskal's Algorithm
   
-###3) Shortest Path (Dynamic Programming)
+### 3) Shortest Path (Dynamic Programming)
   - Dijkstra's Algorithm - Single Source
   - Bellman Ford Algorithm - All Pairs
   - Floyd Warshall Algorithm - All Pairs
   - Johnson's Algorithm - All Pairs
   
-###4) 2 SAT Problem
+### 4) 2 SAT Problem
   - Papadamitriou's Algorithm
   - Kosaraju's Algorithm
 
