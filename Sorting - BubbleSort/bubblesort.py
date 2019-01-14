@@ -18,12 +18,11 @@ def main():
     print(arr)
 
     # Calling bubble sort algorithm on list
-
     bubbleSort(arr)
 
 def bubbleSort(arr):
     """"Bubble Sort Algortihm to sort an array. Input is the list to be sorted."""
-    
+
     print("\n")
 
     # Iterating through array
