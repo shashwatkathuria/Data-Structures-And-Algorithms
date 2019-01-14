@@ -25,4 +25,8 @@ _____________________________________
 ### 4) 2 SAT Problem
   - Papadamitriou's Algorithm
   - Kosaraju's Algorithm
+  
+### 5) Travelling Salesman Problem (Hamiltonian Path)
+  - Greedy Heuristic
+  - Dynamic Programming
 
