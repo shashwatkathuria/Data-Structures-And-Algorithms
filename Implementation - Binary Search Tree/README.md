@@ -1,6 +1,6 @@
 # BINARY SEARCH TREE
 ------------------------------------
-INSTURCTIONS TO RUN THE PROGRAM
+INSTRUCTIONS TO RUN THE PROGRAM
 ------------------------------------
 
 1. Run ./a.out in the terminal to run the program and get the output.
