@@ -28,7 +28,7 @@ COMPONENTS OF THE FOLDER
    
 4. "personarr.cpp" contains the main function.
 
-5."./a.out" contains the compiled file compiled using g++ compiler.
+5. "./a.out" contains the compiled file compiled using g++ compiler.
 
 
 ------------------------------------------
