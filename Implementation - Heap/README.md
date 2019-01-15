@@ -1,7 +1,7 @@
 
 # MINHEAP AND MAXHEAP
 ------------------------------------
-# INSTRUCTIONS TO RUN THE PROGRAM
+INSTRUCTIONS TO RUN THE PROGRAM
 ------------------------------------
 
 1. Run ./a.out in the terminal to run the program and get the output.
@@ -9,13 +9,13 @@
 2. The entries in the file "input.txt" are inserted alongwith the number of entries at the top.
 
 ----------------
-# OUTPUT
+OUTPUT
 ----------------
 
 --)  "output.txt" contains the output of "heap.cpp".
 
 ------------------------------------
-# COMPONENTS OF THE FILE
+COMPONENTS OF THE FILE
 ------------------------------------
 
 --) || g++ heap.cpp ||
@@ -31,7 +31,7 @@
 
 
 -----------------------------------
-# TIME COMPLEXITIES
+TIME COMPLEXITIES
 ------------------------------------
 
 # class minHeap and class maxHeap
