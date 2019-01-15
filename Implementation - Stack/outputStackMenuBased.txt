@@ -1,0 +1,257 @@
+
+THE INPUT.TXT IS SUCCESSFULLY INSERTED INTO THE STACK
+PLEASE CHOOSE AMONG THE FOLLOWING OPERATIONS TO DO AS YOU LIKE
+_________________________________
+--------------------------------------------------------
+-||PLEASE REMEMBER TO SCROLL ABOVE TO SEE THE OUTPUTS||-
+--------------------------------------------------------
+STACK
+--------------------------------------------------------
+1. Push (Insert) an element into Stack
+2. Pop (Delete) top element from Stack
+3. Search for a person in Stack
+4. Print the Stack from top to bottom
+5. Get the number of persons in the Stack
+6. Delete the whole Stack
+0. Exit
+Enter a choice:  4
+_________________________________
+DISPLAYING THE STACK FROM TOP TO BOTTOM..
+
+ELEMENT AT 0 PLACES FROM TOP =
+Name  :Vaibhav Saini || Age  : 45
+
+ELEMENT AT 1 PLACES FROM TOP =
+Name  :Samyak Gupta || Age  : 22
+
+ELEMENT AT 2 PLACES FROM TOP =
+Name  :Mohit Singh || Age  : 36
+
+ELEMENT AT 3 PLACES FROM TOP =
+Name  :Yatharth Ahuja || Age  : 22
+
+ELEMENT AT 4 PLACES FROM TOP =
+Name  :Aman Jain || Age  : 4
+
+ELEMENT AT 5 PLACES FROM TOP =
+Name  :Devesh Kumar || Age  : 17
+
+
+_________________________________
+--------------------------------------------------------
+-||PLEASE REMEMBER TO SCROLL ABOVE TO SEE THE OUTPUTS||-
+--------------------------------------------------------
+STACK
+--------------------------------------------------------
+1. Push (Insert) an element into Stack
+2. Pop (Delete) top element from Stack
+3. Search for a person in Stack
+4. Print the Stack from top to bottom
+5. Get the number of persons in the Stack
+6. Delete the whole Stack
+0. Exit
+Enter a choice:  3
+_________________________________
+
+Enter element to search for:
+Enter FIRST NAME of person:  Aman
+Enter LAST NAME of person:  Jain
+Enter the AGE of the person:  4
+_________________________________
+
+SEARCHING....
+USING TEMPORARY STACK WHILE SEARCHING(AND POPPING FROM ORIGINAL STACK)....
+PUSHING ELEMENTS SEARCHED BACK INTO ORIGINAL STACK....
+
+FOUND THE ELEMENT AT 4 POSITIONS FROM TOP
+Name  :Aman Jain || Age  : 4
+
+
+_________________________________
+--------------------------------------------------------
+-||PLEASE REMEMBER TO SCROLL ABOVE TO SEE THE OUTPUTS||-
+--------------------------------------------------------
+STACK
+--------------------------------------------------------
+1. Push (Insert) an element into Stack
+2. Pop (Delete) top element from Stack
+3. Search for a person in Stack
+4. Print the Stack from top to bottom
+5. Get the number of persons in the Stack
+6. Delete the whole Stack
+0. Exit
+Enter a choice:  2
+_________________________________
+
+DELETING THE ELEMENT
+Name  :Vaibhav Saini || Age  : 45
+
+_________________________________
+--------------------------------------------------------
+-||PLEASE REMEMBER TO SCROLL ABOVE TO SEE THE OUTPUTS||-
+--------------------------------------------------------
+STACK
+--------------------------------------------------------
+1. Push (Insert) an element into Stack
+2. Pop (Delete) top element from Stack
+3. Search for a person in Stack
+4. Print the Stack from top to bottom
+5. Get the number of persons in the Stack
+6. Delete the whole Stack
+0. Exit
+Enter a choice:  4
+_________________________________
+DISPLAYING THE STACK FROM TOP TO BOTTOM..
+
+ELEMENT AT 0 PLACES FROM TOP =
+Name  :Samyak Gupta || Age  : 22
+
+ELEMENT AT 1 PLACES FROM TOP =
+Name  :Mohit Singh || Age  : 36
+
+ELEMENT AT 2 PLACES FROM TOP =
+Name  :Yatharth Ahuja || Age  : 22
+
+ELEMENT AT 3 PLACES FROM TOP =
+Name  :Aman Jain || Age  : 4
+
+ELEMENT AT 4 PLACES FROM TOP =
+Name  :Devesh Kumar || Age  : 17
+
+
+_________________________________
+--------------------------------------------------------
+-||PLEASE REMEMBER TO SCROLL ABOVE TO SEE THE OUTPUTS||-
+--------------------------------------------------------
+STACK
+--------------------------------------------------------
+1. Push (Insert) an element into Stack
+2. Pop (Delete) top element from Stack
+3. Search for a person in Stack
+4. Print the Stack from top to bottom
+5. Get the number of persons in the Stack
+6. Delete the whole Stack
+0. Exit
+Enter a choice:  3
+_________________________________
+
+Enter element to search for:
+Enter FIRST NAME of person:  Shashwat
+Enter LAST NAME of person:  Kathuria
+Enter the AGE of the person:  19
+_________________________________
+
+SEARCHING....
+USING TEMPORARY STACK WHILE SEARCHING(AND POPPING FROM ORIGINAL STACK)....
+PUSHING ELEMENTS SEARCHED BACK INTO ORIGINAL STACK....
+GIVEN ELEMENT NOT IN STACK!!
+
+_________________________________
+--------------------------------------------------------
+-||PLEASE REMEMBER TO SCROLL ABOVE TO SEE THE OUTPUTS||-
+--------------------------------------------------------
+STACK
+--------------------------------------------------------
+1. Push (Insert) an element into Stack
+2. Pop (Delete) top element from Stack
+3. Search for a person in Stack
+4. Print the Stack from top to bottom
+5. Get the number of persons in the Stack
+6. Delete the whole Stack
+0. Exit
+Enter a choice:  1
+_________________________________
+Enter the element to push :
+
+Enter FIRST NAME of person:  Shashwat
+Enter LAST NAME of person:  Kathuria
+Enter the AGE of the person:  19
+_________________________________
+
+_________________________________
+--------------------------------------------------------
+-||PLEASE REMEMBER TO SCROLL ABOVE TO SEE THE OUTPUTS||-
+--------------------------------------------------------
+STACK
+--------------------------------------------------------
+1. Push (Insert) an element into Stack
+2. Pop (Delete) top element from Stack
+3. Search for a person in Stack
+4. Print the Stack from top to bottom
+5. Get the number of persons in the Stack
+6. Delete the whole Stack
+0. Exit
+Enter a choice:  4
+_________________________________
+DISPLAYING THE STACK FROM TOP TO BOTTOM..
+
+ELEMENT AT 0 PLACES FROM TOP =
+Name  :Shashwat Kathuria || Age  : 19
+
+ELEMENT AT 1 PLACES FROM TOP =
+Name  :Samyak Gupta || Age  : 22
+
+ELEMENT AT 2 PLACES FROM TOP =
+Name  :Mohit Singh || Age  : 36
+
+ELEMENT AT 3 PLACES FROM TOP =
+Name  :Yatharth Ahuja || Age  : 22
+
+ELEMENT AT 4 PLACES FROM TOP =
+Name  :Aman Jain || Age  : 4
+
+ELEMENT AT 5 PLACES FROM TOP =
+Name  :Devesh Kumar || Age  : 17
+
+
+_________________________________
+--------------------------------------------------------
+-||PLEASE REMEMBER TO SCROLL ABOVE TO SEE THE OUTPUTS||-
+--------------------------------------------------------
+STACK
+--------------------------------------------------------
+1. Push (Insert) an element into Stack
+2. Pop (Delete) top element from Stack
+3. Search for a person in Stack
+4. Print the Stack from top to bottom
+5. Get the number of persons in the Stack
+6. Delete the whole Stack
+0. Exit
+Enter a choice:  6
+_________________________________
+
+SUCCESSFULLY DELETED WHOLE STACK!!
+
+_________________________________
+--------------------------------------------------------
+-||PLEASE REMEMBER TO SCROLL ABOVE TO SEE THE OUTPUTS||-
+--------------------------------------------------------
+STACK
+--------------------------------------------------------
+1. Push (Insert) an element into Stack
+2. Pop (Delete) top element from Stack
+3. Search for a person in Stack
+4. Print the Stack from top to bottom
+5. Get the number of persons in the Stack
+6. Delete the whole Stack
+0. Exit
+Enter a choice:  4
+_________________________________
+NO ELEMENTS IN THE STACK!!CANNOT DISPLAY THE STACK!!
+_________________________________
+--------------------------------------------------------
+-||PLEASE REMEMBER TO SCROLL ABOVE TO SEE THE OUTPUTS||-
+--------------------------------------------------------
+STACK
+--------------------------------------------------------
+1. Push (Insert) an element into Stack
+2. Pop (Delete) top element from Stack
+3. Search for a person in Stack
+4. Print the Stack from top to bottom
+5. Get the number of persons in the Stack
+6. Delete the whole Stack
+0. Exit
+Enter a choice:  0
+_________________________________
+BYE!!!
+_________________________________
