@@ -1,57 +1,42 @@
+# ARRAY LIST
+--------------------------------
+INSTRUCTIONS TO RUN THE PROGRAM
 --------------------------------
 
-# INSTRUCTIONS TO RUN THE PROGRAM
 
---------------------------------
+1. Run "./a.out" file.
 
+2. The entries in the file are already inserted into the array.
 
-1.Run "./a.out" file.
-
-
-2.The entries in the file are already inserted into the array.
-
-
-3.The program is MENU-DRIVEN so you can appropriately operate on the array doing the
-
-  operations that you want to do. e.g.->search,delete,sort,display,etc.
+3. The program is MENU-DRIVEN so you can appropriately operate on the array doing the
+   operations that you want to do. e.g.->search,delete,sort,display,etc.
 
 
 ---------------------------
-
-# COMPONENTS OF THE FOLDER
-
+COMPONENTS OF THE FOLDER
 ---------------------------
 
 
-1."input.txt" file contains all the entries alongwith the number of entries on the
+1. "input.txt" file contains all the entries alongwith the number of entries on the
 
-  top(as mentioned in google classroom).[IF YOU WANT TO ALTER THE FILE,PLEASE DONT FORGET TO
+   top.
 
-  MODIFY THE NUMBER OF ENTRIES ON THE TOP OF THE FILE]
+2. "personclasshelpers.h" is a user defined directory in which the class person is implemented.
 
-
-2."personclasshelpers.h" is a user defined directory in which the class person is implemented.
-
-
-3."personarrayclasshelpers.h" is a user defined directory in which the class personarray
-
-  is implemented.
-
-
-4."personarr.cpp" contains the main function.
-
+3. "personarrayclasshelpers.h" is a user defined directory in which the class personarray
+   is implemented.
+   
+4. "personarr.cpp" contains the main function.
 
 5."./a.out" contains the compiled file compiled using g++ compiler.
 
 
 ------------------------------------------
-
-# TIME COMPLEXITIES
-
+TIME COMPLEXITIES
 ------------------------------------------
 
 
-# 1) Class Person
+## 1) Class Person
 
 
 
@@ -126,8 +111,7 @@
 
 
 
-# 2) Class PersonArray
-
+## 2) Class PersonArray
 
 
   PersonArray()->
