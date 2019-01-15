@@ -34,7 +34,7 @@ COMPONENTS OF THE FILE
 TIME COMPLEXITIES
 ------------------------------------
 
-# class minHeap and class maxHeap
+## class minHeap and class maxHeap
 
 1) minHeap() // maxHeap()
 
