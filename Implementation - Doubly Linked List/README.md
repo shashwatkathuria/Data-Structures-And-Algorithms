@@ -34,7 +34,7 @@ TIME COMPLEXITIES
 
 
 
-# 1) Class Person
+## 1) Class Person
 
   Person()->
 
@@ -107,7 +107,7 @@ TIME COMPLEXITIES
 
 
 
-# 2) Class PersonDoublyLinkedList
+## 2) Class PersonDoublyLinkedList
 
   PersonDoublyLinkedList()->
 
