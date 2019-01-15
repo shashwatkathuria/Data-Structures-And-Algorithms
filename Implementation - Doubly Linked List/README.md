@@ -1,60 +1,40 @@
+# BINARY SEARCH TREE
+--------------------------------
+INSTRUCTIONS TO RUN THE PROGRAM
 --------------------------------
 
-# INSTRUCTIONS TO RUN THE PROGRAM
 
---------------------------------
+1. Run "./a.out" file.
 
+2. The entries in the file are already inserted into the doubly linked list.
 
-1.Run "./a.out" file.
-
-
-2.The entries in the file are already inserted into the doubly linked list.
-
-
-3.The program is MENU-DRIVEN so you can appropriately operate on the doubly linked list doing the
+3. The program is MENU-DRIVEN so you can appropriately operate on the doubly linked list doing the
 
   operations that you want to do. e.g.->search,delete,sort,display,etc.
 
-
 ---------------------------
-
-# COMPONENTS OF THE FOLDER
-
+COMPONENTS OF THE FOLDER
 ---------------------------
 
 
-1."input.txt" file contains all the entries alongwith the number of entries on the
+1. "input.txt" file contains all the entries alongwith the number of entries on the top.
 
-  top(as mentioned in google classroom).[IF YOU WANT TO ALTER THE FILE,PLEASE DONT FORGET TO
+2. "personclasshelpers.h" is a user defined directory in which the class person is implemented.
 
-  MODIFY THE NUMBER OF ENTRIES ON THE TOP OF THE FILE]
+3. "persondllclasshelpers.h" is a user defined directory in which the class persondoublylinkedlist
+   is implemented.
 
+4. "persondll.cpp" contains the main function.
 
-2."personclasshelpers.h" is a user defined directory in which the class person is implemented.
-
-
-3."persondllclasshelpers.h" is a user defined directory in which the class persondoublylinkedlist
-
-  is implemented.
-
-
-4."persondll.cpp" contains the main function.
-
-
-5."./a.out" contains the compiled file compiled using g++ compiler.
-
+5. "./a.out" contains the compiled file compiled using g++ compiler.
 
 ---------------------------------------------
-
-# TIME COMPLEXITIES
-
+TIME COMPLEXITIES
 ---------------------------------------------
 
 
 
 # 1) Class Person
-
-
 
   Person()->
 
@@ -128,8 +108,6 @@
 
 
 # 2) Class PersonDoublyLinkedList
-
-
 
   PersonDoublyLinkedList()->
 
