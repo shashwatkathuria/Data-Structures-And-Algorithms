@@ -1,9 +1,9 @@
 
 # TRIE
-_____________________
 ------------------------------------
-# INSTRUCTIONS TO RUN THE PROGRAM
+INSTRUCTIONS TO RUN THE PROGRAM
 ------------------------------------
+
 1. Run ./a.out in the terminal to run the program and get the output.
 
 2. The entries in the file "input.txt" which are randomly generated are inserted
@@ -11,12 +11,13 @@ _____________________
    the number of words to generate randomly.
 
 ----------------
-# OUTPUT
+OUTPUT
 ----------------
+
 --)  "output.txt" contains the output of "trie.cpp".
-_______________________________________________________________________________________
+
 ------------------------------------
-# COMPONENTS OF THE FILE
+COMPONENTS OF THE FILE
 ------------------------------------
 
 --) || g++ trie.cpp ||
@@ -32,10 +33,10 @@ ________________________________________________________________________________
 
 
 -----------------------------------
-# TIME COMPLEXITIES
+TIME COMPLEXITIES
 ------------------------------------
 
-class Trie
+## class Trie
 
 1) Trie()
 
