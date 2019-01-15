@@ -1,6 +1,6 @@
 # BUBBLE SORT
 ------------------------------------
-# INSTRUCTIONS TO RUN THE PROGRAM
+INSTRUCTIONS TO RUN THE PROGRAM
 ------------------------------------
 
 The input array of a 100,000 entries is already provided in IntegerArray.txt.
@@ -11,7 +11,7 @@ To run the program, the following command is to be executed:
 
 
 ------------------------------------
-# ALGORITHM
+ALGORITHM
 ------------------------------------
 
 In Bubble Sort algorithm, every 2 adjacent neighbouring elements of the array
