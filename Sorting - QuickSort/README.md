@@ -3,7 +3,7 @@
 INSTRUCTIONS TO RUN THE PROGRAM
 ------------------------------------
 
-The input array of a 100,000 entries is already provided in IntegerArray.txt.
+The input array of a 10,000 entries is already provided in IntegerArray.txt.
 
 To run the program, the following commands are to be executed:
 
