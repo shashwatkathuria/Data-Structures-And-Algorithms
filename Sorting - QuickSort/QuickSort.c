@@ -56,41 +56,41 @@ void quickSort(int arr[], int low, int high)
 		}
 
 		// Computing positions of start, middle and end in the array/subarray
-    int mid;
-    int temp;
-    int noOfElements = high - low + 1;
-    if ( ( noOfElements / 2 ) * 2 == noOfElements )
+		int mid;
+		int temp;
+		int noOfElements = high - low + 1;
+		if ( ( noOfElements / 2 ) * 2 == noOfElements )
 		{
-        mid = noOfElements / 2 - 1;
+			mid = noOfElements / 2 - 1;
 		}
 		else
 		{
-        mid = noOfElements / 2;
+			mid = noOfElements / 2;
 		}
 
 		int pivot;
-    int pivotPosition;
+    	        int pivotPosition;
 
 		// Computing pivot as the median of the start, middle and end elements of the array/subarray in concern
-    if( (arr[mid] < arr[low] && arr[high] > arr[low]) || (arr[mid] > arr[low] && arr[high] < arr[low]) )
-    {
-        pivot = arr[low];
-        pivotPosition = low;
-    }
-    else if ( (arr[low] < arr[mid] && arr[high] > arr[mid]) || (arr[low] > arr[mid] && arr[high] < arr[mid]) )
-    {
+	        if( (arr[mid] < arr[low] && arr[high] > arr[low]) || (arr[mid] > arr[low] && arr[high] < arr[low]) )
+	        {
+				pivot = arr[low];
+				pivotPosition = low;
+	    	}
+	    	else if ( (arr[low] < arr[mid] && arr[high] > arr[mid]) || (arr[low] > arr[mid] && arr[high] < arr[mid]) )
+	    	{
 				pivot = arr[mid];
 				pivotPosition = mid;
-    }
+    		}
 		else
 		{
-         pivot = arr[high];
-         pivotPosition = high;
-    }
+         			pivot = arr[high];
+         			pivotPosition = high;
+    		}
 		// Swapping the pivot with the first element in the array/subarray
-    temp = arr[low];
-    arr[low] = pivot;
-    arr[pivotPosition] = temp;
+    		temp = arr[low];
+    		arr[low] = pivot;
+    		arr[pivotPosition] = temp;
 
 		// Swapping elements to put the pivot in its correct position,
 		// by putting smaller elements to the left and bigger to the right
