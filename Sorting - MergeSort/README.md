@@ -18,9 +18,9 @@ ALGORITHM
 In Merge Sort algorithm, the array/subarrays are rescursively merged.First the subarray
 calls merge sort on its two halves, then merges itself. In this way, in the base case,
 the neighbouring elements merge themselves, then double their merging size from 2 to 4
-by taking more adjacent neighbours, then double their size to 8, until the whole array is
-sorted. In the intermediate steps, the merged subarrays are sorted. The best and worse
-case performances of this algorithm are both O(nlogn).
+by taking more adjacent neighbours, then double their size to 8, and so on until the 
+whole array is sorted. In the intermediate steps, the merged subarrays are sorted. The 
+best and worse case performances of this algorithm are both O(nlogn).
 
 
 ------------------------------------  
