@@ -5,7 +5,7 @@ Created on Sun Jul  8 15:17:15 2018
 @author: Shashwat Kathuria
 """
 
-# BIG KNAPSACK ALGORITHM - USING RECURSION
+# BIG KNAPSACK ALGORITHM - USING RECURSION AND DYNAMIC PROGRAMMING (MEMOIZATION)
 
 # Extending recursion limit on system so that program does not give error
 import sys
