@@ -3,6 +3,8 @@
 //algorithm library used to reverse a string
 #include<algorithm>
 
+// LONGEST COMMON SUBSEQUENCE ALGORITHM - USING DYNAMIC PROGRAMMING
+
 using namespace std;
 //Declaring the longest common sequence algorithm function
 void longestCommonSubsequence(string s1,string s2);
