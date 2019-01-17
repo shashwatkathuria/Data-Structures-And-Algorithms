@@ -1,4 +1,4 @@
-#LONGEST COMMON SUBSEQUENCE ALGORITHM - DYNAMIC PROGRAMMING
+# LONGEST COMMON SUBSEQUENCE ALGORITHM - DYNAMIC PROGRAMMING
 --------------------------------------------------------
 INSTRUCTIONS TO RUN THE PROGRAM
 --------------------------------------------------------

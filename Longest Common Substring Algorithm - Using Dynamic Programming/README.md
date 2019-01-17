@@ -1,4 +1,4 @@
-#LONGEST COMMON SUBSTRING ALGORITHM - DYNAMIC PROGRAMMING
+# LONGEST COMMON SUBSTRING ALGORITHM - DYNAMIC PROGRAMMING
 --------------------------------------------------------
 INSTRUCTIONS TO RUN THE PROGRAM
 --------------------------------------------------------
