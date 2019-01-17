@@ -12,21 +12,21 @@ int main(void)
     string s1,s2;
 
     //Taking input for first string
-    cout<<"Enter first string  :  ";
-    cin>>s1;
-    cout<<endl;
+    cout << "Enter first string  :  ";
+    cin >> s1;
+    cout << endl;
 
     //Taking input for second string
-    cout<<"Enter second string :  ";
-    cin>>s2;
-    cout<<endl;
+    cout << "Enter second string :  ";
+    cin >> s2;
+    cout << endl;
 
     //Passing strings into function
-    longestCommonSubsequence(s1,s2);
+    longestCommonSubsequence(s1, s2);
 
 }
 
-void longestCommonSubsequence(string s1,string s2)
+void longestCommonSubsequence(string s1, string s2)
 {
 
     string longestSubsequence;
@@ -43,7 +43,7 @@ void longestCommonSubsequence(string s1,string s2)
         for(int j = 0; j <= s2Length ; j++)
         {
             //Filling zeros in first column and first row because of comparison with an empty string
-            if(i == 0 || j==0)
+            if(i == 0 || j == 0)
             {
                   dpMatrix[i][j] = 0;
             }
@@ -51,55 +51,55 @@ void longestCommonSubsequence(string s1,string s2)
             else
             {
                   //If same letters found , diagonally incrementing the cell by 1
-                  if(s1[i-1] == s2 [j-1])
+                  if(s1[i -  1] == s2 [j - 1])
                   {
-                      dpMatrix[i][j] = dpMatrix[i-1][j-1] + 1;
+                      dpMatrix[i][j] = dpMatrix[i - 1][j - 1] + 1;
                   }
 
                   //If different letters found , putting maximum of upper and left adjacent column
                   else
                   {
-                      dpMatrix[i][j] = max(dpMatrix[i-1][j] , dpMatrix[i][j-1]);
+                      dpMatrix[i][j] = max(dpMatrix[i - 1][j] , dpMatrix[i][j - 1]);
                   }
             }
 
         }
     }
     //Printing the dpMatrix
-    cout<<endl;
-    for(int i = 0; i<= s1Length ;i++ )
+    cout << endl;
+    for(int i = 0; i <= s1Length ; i++ )
     {
 
         //Printing rows in required format
-        if(i==0)
+        if(i == 0)
         {
             //Printing string s2
-            cout<<endl<<"   #";
-            for(int k = 0;k <s2Length; k++)
+            cout << endl << "   #";
+            for(int k = 0; k < s2Length; k++)
             {
-                cout<<" "<<s2[k];
+                cout << " " << s2[k];
             }
-            cout<<endl<<"# ";
+            cout << endl << "# ";
         }
 
         //Printing string s1 letter by letter
-        if(i!=0)
+        if(i != 0)
         {
-            cout<<s1[i-1]<<" ";
+            cout << s1[i - 1] << " ";
         }
 
         //Printing columns in required format
-        for(int j = 0; j<= s2Length ; j++)
+        for(int j = 0; j <= s2Length ; j++)
         {
-            cout<<" "<<dpMatrix[i][j];
+            cout << " " << dpMatrix[i][j];
         }
-        cout<<endl;
+        cout << endl;
     }
-    cout<<endl;
+    cout << endl;
 
     //Initiallizing variables for bactracking,starting from the rightmost bottom corner element
     int temp = dpMatrix[s1Length][s2Length];
-    int itemp = s1Length,jtemp = s2Length;
+    int itemp = s1Length, jtemp = s2Length;
 
     //Backtracking
 
@@ -107,9 +107,9 @@ void longestCommonSubsequence(string s1,string s2)
     {
 
         //Concatenating answer to the string if corresponding elements of the two string are same
-        if(s1[itemp-1]==s2[jtemp-1])
+        if(s1[itemp - 1] == s2[jtemp - 1])
         {
-            longestSubsequence+= s1[itemp - 1];
+            longestSubsequence += s1[itemp - 1];
             itemp--;
             jtemp--;
 

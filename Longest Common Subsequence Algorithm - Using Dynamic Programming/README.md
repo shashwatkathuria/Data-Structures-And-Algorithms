@@ -1,19 +1,29 @@
-
-LONGEST COMMON SUBSEQUENCE PROBLEM-DYNAMIC PROGRAMMING
+#LONGEST COMMON SUBSEQUENCE ALGORITHM - DYNAMIC PROGRAMMING
 --------------------------------------------------------
-1. "lcs.cpp" contains the program implemented.
-2. "./a.out" contains the compiled code.
-3. "ouput.txt" contains a sample output.
-4. "readme.txt" is this file.
---------------------------------------------------------
-TIME COMPLEXITY
+INSTRUCTIONS TO RUN THE PROGRAM
 --------------------------------------------------------
 
- # void longestCommonSubsequence(string s1,string s2)
-    
-    O(m*n)   where m = length of string1 , n = length of string2
-    The function takes m*n complexity to fill the matrix entries and filling each entry takes
-    constant number of steps.Printing also takes m*n complexity and backtraking takes at most
-    linear steps as the longest common subsequence can be either of the two strings itself in the
-    worst case.
+The following command must be executed to run the program :
+
+              g++ lcs.cpp
+              ./a.out
+
+
+--------------------------------------------------------
+ALGORITHM
+--------------------------------------------------------
+
+In the Longest Common Subsequence Algorithm, dynamic programming is
+used to keep track of the maximum length of longest common subsequence
+till that particular iteration, then, on backtrackinng, we are able to get
+the longest common subsequence. Whenever we get on a iteration where the
+two corresponding characters of the strings are equal, we add one to
+the length plus the diagonally left top value before without those
+characters. If we do not encounter same corresponding characters,
+we keep the value of the maximum value obtained till then if one of
+those corresponding characters weren't there. To get the subsequence,
+we simply backtrack by analyzing which cases took us to the particular
+position in the DP matrix. The algorithm runs in O(m * n) time where
+m is the length of the first string and n is the length of second string.  
+
 --------------------------------------------------------
