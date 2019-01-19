@@ -19,7 +19,7 @@ class UndirectedGraph:
         self.edges  = []
         self.vertices = list( range(1, noOfVertices) )
         self.noOfEdges = 0
-	self.noOfVertices = noOfVertices
+	    self.noOfVertices = noOfVertices
 
     def addEdge(self, edge):
         self.edges.append(edge)
