@@ -5,8 +5,8 @@ Created on Sat Jul  7 20:56:13 2018
 @author: Shashwat Kathuria
 """
 
-
 # MAXIMUM WEIGHT INDEPENDENT SET ALGORITHM (FOR PATH GRAPHS) - USING DYNAMIC PROGRAMMING
+
 def main():
 
     # Reading from the input file and storing information weight of the nodes
