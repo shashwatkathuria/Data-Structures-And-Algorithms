@@ -1,4 +1,4 @@
-# KARGER'S MINCUT ALGORITHM (RANDOMIZED ALGORITHM)
+# KARGER'S MINCUT ALGORITHM (FOR UNDIRECTED GRAPHS) (RANDOMIZED ALGORITHM)
 ---------------------------------------------------
 INSTRUCTIONS TO RUN THE PROGRAM
 ---------------------------------------------------
@@ -21,4 +21,5 @@ value. The probability of getting the MinCut right in one
 iteration is 1/nC2, so to get the right MinCut, we run the
 iterations nC2 times to get the probability close to 1.The run time
 complexity of this algorithm is O(n^2).
+
 ---------------------------------------------------
