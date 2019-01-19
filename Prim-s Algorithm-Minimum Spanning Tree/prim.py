@@ -19,7 +19,7 @@ class UndirectedGraph:
         self.edges  = []
         self.vertices = list( range(1, noOfVertices) )
         self.noOfEdges = 0
-	    self.noOfVertices = noOfVertices
+        self.noOfVertices = noOfVertices
 
     def addEdge(self, edge):
         self.edges.append(edge)
@@ -57,25 +57,30 @@ def PrimsAlgorithm(graph, startVertex):
     edges = graph.edges
     flag = True
 
-    while flag != False:
+    minimumSpanningTree = []
+    while flag == True:
         cutsEdges = []
         flag = False
         for edge in edges:
             if edge.u in visited and edge.v in notvisited:
                 flag = True
-                cutsEdges.append((edge.weight, edge.u, edge.v))
+                cutsEdges.append( (edge.weight, edge.u, edge.v) )
 
             if edge.u in notvisited and edge.v in visited:
-                flag=True
-                cutsEdges.append((edge.weight, edge.v, edge.u))
+                flag = True
+                cutsEdges.append( (edge.weight, edge.v, edge.u) )
 
-        if flag==True :
+        if flag == True :
             cutsEdges.sort(key = lambda fn : fn[0])
             edgechosen = cutsEdges[0]
             cost += edgechosen[0]
+            minimumSpanningTree.append(edgechosen)
             visited.append(edgechosen[2])
             notvisited.remove(edgechosen[2])
 
+    print("The minimum Spanning Tree is : ")
+    for edge in minimumSpanningTree:
+        print("EDGE from " + str(edgechosen[1]))
     return cost
 
 
