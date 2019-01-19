@@ -74,13 +74,17 @@ def PrimsAlgorithm(graph, startVertex):
             cutsEdges.sort(key = lambda fn : fn[0])
             edgechosen = cutsEdges[0]
             cost += edgechosen[0]
-            minimumSpanningTree.append(edgechosen)
+            minimumSpanningTree.append( UndirectedEdge(u = edgechosen[1], v = edgechosen[2], weight = edgechosen[0]) )
             visited.append(edgechosen[2])
             notvisited.remove(edgechosen[2])
 
-    print("The minimum Spanning Tree is : ")
+    print("The minimum Spanning Tree is : \n")
+
+    minimumSpanningTree.sort(reverse = False, key = lambda x: x.u)
+    
     for edge in minimumSpanningTree:
-        print("EDGE from " + str(edgechosen[1]))
+        print(edge)
+
     return cost
 
 
