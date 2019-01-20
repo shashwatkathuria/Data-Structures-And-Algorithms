@@ -63,7 +63,7 @@ def kruskal(edges, noOfClusters, graph):
                 i = graph.findClusterIndex(vertex1)
                 j = graph.findClusterIndex(vertex2)
 
-                # Not adding them if they belong to the same cluster
+                # Not merging them if they belong to the same cluster
                 if i == j:
                     continue
                 # Else merging their clusters
@@ -85,38 +85,60 @@ def kruskal(edges, noOfClusters, graph):
 
 
 def DFS(graph, vertex, vertex2):
+    """Function to run Depth First Search on a graph and return whether or not there exists
+       a path between the two vertices given as inputs."""
+
+    # Initializing the flag of path and all vertices visited or not to false
     path = False
     for key in graph.booleanVerticeTraversed:
         graph.booleanVerticeTraversed[key][0] = False
 
     def DFSHelper(graph, vertex, vertex2):
+        """Helper function which runs the main DFS Algorithm."""
+
+        # Refers to the global path variable of whether or not
+        # there exists a path between the two vertices
         global path
+
+        # Visited the first starting vertex
         graph.booleanVerticeTraversed[vertex][0] = True
+
+        # Storing and referencing list of neighbours
         neighbours = graph.booleanVerticeTraversed[vertex][1:]
 
+        # If there are no neighbours, then no path is there between those
+        # two vertices
         if neighbours == []:
             path = False
             return
 
 
+        # Checking whether or not all the neighbours are visited
         flag = True
         for neighbour in neighbours:
             if graph.booleanVerticeTraversed[neighbour][0] == False:
                 flag = False
 
+        # If yes, then there is no path between those two vertices
+        # otherwise the path would have been found out by now
         if flag == True:
             path = False
             return
 
+        # Checking on neighbours which are not visited
         for neighbour in neighbours:
             if graph.booleanVerticeTraversed[neighbour][0] == False:
+                # If the neighbour is the required vertex, then there exists a path
                 if neighbour == vertex2:
                     path = True
                     return
+                # Else recursively run DFS on the neighbour
                 else:
                     DFSHelper(graph,neighbour,vertex2)
 
+    # Calling Main DFS Algorithm (Helper)
     DFSHelper(graph,vertex,vertex2)
+
     return path
 
 
@@ -142,27 +164,33 @@ class UndirectedGraph:
         self.noOfEdges = 0
 
     def addEdge(self, edge):
+        """Function to add an edge to the graph."""
         self.edges.append(edge)
         self.noOfEdges += 1
 
 class ClusterGraph:
 
     def __init__(self, noOfVertices):
+        """Function to initialize a cluster graph."""
         self.edges = []
         self.noOfVertices = noOfVertices
         self.clusters = []
         self.booleanVerticeTraversed = {}
 
+        # Initializing with no vetices visited till now (to be used in DFS Algorithm)
         for i in range(1, self.noOfVertices + 1, 1):
             self.booleanVerticeTraversed[i] = [ False ]
 
+        # Each cluster is represented by a list
         for i in range(0, noOfVertices + 1, 1):
             self.clusters.append([i])
 
     def addEdge(self, edge):
+        """Function to add an edge to the cluster graph."""
         self.edges.append(edge)
 
     def mergeClusters(self, i, j):
+        """Function to merge two clusters given their indices."""
         listi = self.clusters[i]
         listj = self.clusters[j]
         ltemp = listi[:] + listj[:]
@@ -171,6 +199,7 @@ class ClusterGraph:
         self.clusters.append(ltemp)
 
     def findClusterIndex(self, element):
+        """Function to find the index of the cluster of an element."""
         for i in range( len(self.clusters) ):
             if element in self.clusters[i]:
                 break
