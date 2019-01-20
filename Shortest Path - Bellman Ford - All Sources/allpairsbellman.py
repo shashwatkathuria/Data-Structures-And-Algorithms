@@ -5,7 +5,7 @@ Created on Mon Jul  9 07:31:55 2018
 @author: Shashwat Kathuria
 """
 
-# BELLMAN FORD ALL PAIRS SHORTEST PATH ALGORITHM
+# BELLMAN FORD ALL PAIRS SHORTEST PATH ALGORITHM - USING DYNAMIC PROGRAMMING
 
 # ALL PAIRS SHORTEST PATHS
 
@@ -129,18 +129,21 @@ class DirectedEdge:
 
     def __init__(self, startVertex, endVertex, edgeWeight):
         """Function to initialize edge.Inputs are the start vertex, end vertex and the edge weight."""
+
         self.startVertex = startVertex
         self.endVertex = endVertex
         self.edgeWeight = edgeWeight
 
     def __str__(self):
         """Function to print the edge."""
+
         return "Edge from " + str(self.startVertex) + " to " + str(self.endVertex) + " Weight " + str(self.edgeWeight)
 
 class DirectedGraph:
 
     def __init__(self,noOfVertices, noOfEdges):
         """Function to initialize the graph. Inputs are the number of vertices and number of edges."""
+
         self.edges = {}
         self.noOfVertices = noOfVertices
         self.noOfEdges = noOfEdges
@@ -152,11 +155,13 @@ class DirectedGraph:
 
     def addEdge(self,directedEdge):
         """Funtion to add a directed edge to the graph list of edges."""
+
         self.edges[directedEdge.startVertex, directedEdge.endVertex] = directedEdge.edgeWeight
 
     def computeInDegreeNeighbours(self):
         """Computes the indegree neighbours of all the vertices of the graph
         and stores it in the format [vertexVisitedOrNotVisited,indegreeneighbour1,indegreeneighbour2,...]"""
+
         for vertex in range(1, self.noOfVertices + 1):
                 print("COMPUTING IN DEGREE NEIGHBOURS ON VERTEX NUMBER : " + str(vertex))
                 self.inDegreeNeighbours[vertex] = []
