@@ -19,7 +19,7 @@ and in each iteration, two options are analyzed, one which gives
 the shortest path between them in the number of edges in the current
 iteration minus one and the other option is the minimum of a list
 of shortest paths of the neighbouring in degree vertices of the vertex
-of number of edges in the current iteration minus one in addition to  
+of number of edges in the current iteration minus one in addition to
 a last hop of the edge connecting them. In such a way, we get the
 shortest paths after n - 1 iterations, where n is the number of vertices.
 To check if a negative cycle is present, we also run through one more
