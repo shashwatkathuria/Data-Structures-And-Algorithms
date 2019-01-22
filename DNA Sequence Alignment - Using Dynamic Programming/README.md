@@ -28,6 +28,7 @@ the result. The run time complexity of this algorithm is O(m * n)
 where m is the length of the first sequence and n is the length of
 the second sequence. The i and j above correspond to the respective
 iteration values of the rows and columns of the dynamic programming
-matrix respectively.
+matrix respectively. The same letter, mismatch and gap penalties are
+0, 1 and 2 respectively according to their probabilities of occurence.
 
 ------------------------------------------   
