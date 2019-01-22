@@ -28,6 +28,11 @@ int main(void)
 
 void DNASequenceAlignment(string sequence1, string sequence2)
 {
+    // Initializing penalties
+    int sameLetterPenalty = 0;
+    int mismatchPenalty = 1;
+    int gapMatchingPenalty = 2;
+
     // Declaring the dp matrix with its appropriate size, 1 column/row
     // for empty string (#) and rest for the rest of the letters of the string
     int m = sequence1.length() + 1;
@@ -56,13 +61,13 @@ void DNASequenceAlignment(string sequence1, string sequence2)
                 if(sequence1[i - 1] == sequence2[j - 1])
                 {
                     // Matching ith character with jth character + no penalty(because same letter)
-                    option1 = dpMatrix[i - 1][j - 1] + 0;
+                    option1 = dpMatrix[i - 1][j - 1] + sameLetterPenalty;
 
                     // Matching ith character with an empty gap ' '
-                    option2 = dpMatrix[i - 1][j] + 2;
+                    option2 = dpMatrix[i - 1][j] + gapMatchingPenalty;
 
                     // Matching jth character with an empty gap
-                    option3 = dpMatrix[i][j - 1] + 2;
+                    option3 = dpMatrix[i][j - 1] + gapMatchingPenalty;
 
                     // Storing minimum of the three possibilities
                     dpMatrix[i][j] = min(option1, min(option2, option3));
@@ -71,13 +76,13 @@ void DNASequenceAlignment(string sequence1, string sequence2)
                 else if (sequence1[i - 1] != sequence2[j - 1])
                 {
                   // Matching ith character with jth character + penalty of mismatch
-                  option1 = dpMatrix[i - 1][j - 1] + 1;
+                  option1 = dpMatrix[i - 1][j - 1] + mismatchPenalty;
 
                   // Matching ith character with an empty gap
-                  option2 = dpMatrix[i - 1][j] + 2;
+                  option2 = dpMatrix[i - 1][j] + gapMatchingPenalty;
 
                   // Matching jth character with an empty gap
-                  option3 = dpMatrix[i][j - 1] + 2;
+                  option3 = dpMatrix[i][j - 1] + gapMatchingPenalty;
 
                   // Storing minimum of the three possibilities
                   dpMatrix[i][j] = min(option1, min(option2, option3));
@@ -137,9 +142,9 @@ void DNASequenceAlignment(string sequence1, string sequence2)
         if (sequence1[i - 1] == sequence2[j - 1])
         {
             // Computing which case was used to get the optimal answer
-            option1 = dpMatrix[i - 1][j - 1] + 0;
-            option2 = dpMatrix[i - 1][j] + 2;
-            option3 = dpMatrix[i][j - 1] + 2;
+            option1 = dpMatrix[i - 1][j - 1] + sameLetterPenalty;
+            option2 = dpMatrix[i - 1][j] + gapMatchingPenalty;
+            option3 = dpMatrix[i][j - 1] + gapMatchingPenalty;
 
             // Using the appropriate case to store the best possible alignment
             // Storing strings backwards (will reverse at the end)
@@ -172,9 +177,9 @@ void DNASequenceAlignment(string sequence1, string sequence2)
         else if (sequence1[i - 1] != sequence2[j - 1])
         {
             // Computing which case was used to get the optimal answer
-            option1 = dpMatrix[i - 1][j - 1] + 1;
-            option2 = dpMatrix[i - 1][j] + 2;
-            option3 = dpMatrix[i][j - 1] + 2;
+            option1 = dpMatrix[i - 1][j - 1] + mismatchPenalty;
+            option2 = dpMatrix[i - 1][j] + gapMatchingPenalty;
+            option3 = dpMatrix[i][j - 1] + gapMatchingPenalty;
 
             // Using the appropriate case to store the best possible alignment
             // Storing strings backwards (will reverse at the end)
@@ -227,5 +232,5 @@ void DNASequenceAlignment(string sequence1, string sequence2)
     cout << "\n\nThe best alignment of the two sequences is :\n\n";
     cout << "\n\nFIRST STRING  :" << seq1;
     cout << "\nSECOND STRING :" << seq2 << endl;
-    cout << "The best possible alignment has cost : " << dpMatrix[m - 1][n - 1];
+    cout << "The best possible alignment has cost : " << dpMatrix[m - 1][n - 1] << endl;
 }
