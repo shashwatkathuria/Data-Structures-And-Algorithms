@@ -5,7 +5,8 @@ INSTRUCTIONS TO RUN THE PROGRAM
 
 The following command must be executed to run the program:
 
-      python sequencealignment.py
+      g++ sequencealignment.cpp
+      ./a.out
 
 
 ------------------------------------------
