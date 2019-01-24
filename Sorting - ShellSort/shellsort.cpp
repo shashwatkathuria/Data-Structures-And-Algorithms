@@ -42,7 +42,7 @@ void shellSort(long int arr[], long int noOfElements)
     for(long int gap = noOfElements / 2; gap >= 1; gap /= 2)
     {
       cout << "GAP IS : " << gap << endl;
-      for(long int i = gap; i < noOfElements; i += gap)
+      for(long int i = gap; i < noOfElements; i += 1)
       {
 
         long int element = arr[i];
