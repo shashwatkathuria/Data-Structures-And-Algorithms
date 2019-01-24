@@ -7,7 +7,7 @@ Created on Tue Jul 10 19:25:25 2018
 
 # TRAVELLING SALESMAN PROBLEM - GREEDY HEURISTIC
 
-# The answer is 1203406.5012708856
+# The answer is 1203406.50127
 
 # Initializing values required
 
@@ -78,18 +78,21 @@ def distanceFromCityi(lastVisitedVertex, notVisitedCities):
     """Funtion to return the next smallest city distance and the corresponding city
        from the last visited vertex."""
 
-    # List to store distances from the last vertex
-    distance = []
+    # Initializing minimum distance and city to starting value for the sake of minimizing initialization
+    minimumDistance = distanceBetweenCities(cities[lastVisitedVertex], cities[notVisitedCities[0]])
+    minimumDistanceCity = notVisitedCities[0]
 
-    for j in notVisitedCities:
-        # Appending all cities
-        distance.append( [distanceBetweenCities(cities[lastVisitedVertex], cities[j]), j] )
+    for currentCity in notVisitedCities:
 
-    # Storing answer
-    minimumDistanceAndCity = min(distance, key = lambda x: x[0])
+        # Calculating and storing current city distance from the last visited city
+        currentCityDistance = distanceBetweenCities(cities[lastVisitedVertex], cities[currentCity])
+        # If this distance is smaller than the minimum obtained yet, store it as corresponding minimum
+        if minimumDistance > currentCityDistance:
+            minimumDistance = currentCityDistance
+            minimumDistanceCity = currentCity
 
     # Returning corresponding answer
-    return minimumDistanceAndCity[0], minimumDistanceAndCity[1]
+    return minimumDistance, minimumDistanceCity
 
 if __name__ == "__main__":
     main()
