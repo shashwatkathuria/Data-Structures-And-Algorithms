@@ -22,10 +22,12 @@ def main():
         clause = Clause( firstLiteral = int(clauseLiteralsInfo[0]), secondLiteral = int(clauseLiteralsInfo[1]))
         clauses.append(clause)
 
+    # Calling papadimitriou's algorithm
     papadimitriou(clauses, noOfClauses)
 
 def papadimitriou(clauses, noOfClauses):
-
+    """Funtion to compute where or not a instance satisfies the 2-SAT property.
+       Inputs are the clauses and number of clauses."""
     # List to store the values of the literals initialized above
     answers = []
     answers.append( "NaN" )
@@ -45,7 +47,7 @@ def papadimitriou(clauses, noOfClauses):
     # Running for loop of algorithm
     for k in range( int( math.log(noOfClauses, 2) ) ):
 
-        print("ON LOOP NUMBER :"+ str(k))
+        print("ON LOOP NUMBER :" + str(k))
 
         for j in range(twoNSquared):
 
@@ -60,19 +62,21 @@ def papadimitriou(clauses, noOfClauses):
             # Running loop for every clause
             for clause in clauses:
 
-                randomlyChosenLiteral = random.choices([clause.firstLiteral,clause.secondLiteral])[0]
-
                 # If clause is not satisfying itself individually
                 if clause.isSatisfyingCriteria(answers) == False:
                     areAllClausesSatisfied = False
+
+                    # Randomly choosing a literal and negating its value
+                    randomlyChosenLiteral = random.choices([clause.firstLiteral,clause.secondLiteral])[0]
                     answers[ abs(randomlyChosenLiteral) ] = not( answers[ abs(randomlyChosenLiteral) ] )
+
                     break
 
                 # Else if the clause is satisfying itself individually
                 else:
                     noOfSatisfyingClauses += 1
 
-            print("The number of clauses satisfying criteria till now (of the ones which have been checked) is :" + str(noOfSatisfyingClauses) )
+            print("The number of clauses satisfying criteria till now (of the ones which have been checked in a linear pass) is :" + str(noOfSatisfyingClauses) )
 
             # Breaking early if all the clauses are satisfied
             if areAllClausesSatisfied == True:
