@@ -10,6 +10,7 @@ _____________________________________
   - Merge Sort
   - Merge Sort (Using Linked List)
   - Selection Sort
+  - Radix Sort
   - Shell Sort
   
 ### 2) Minimum Spanning Tree (Greedy Algorithms)
