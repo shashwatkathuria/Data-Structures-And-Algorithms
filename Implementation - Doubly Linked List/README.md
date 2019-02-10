@@ -1,4 +1,4 @@
-# BINARY SEARCH TREE
+# DOUBLY LINKED LIST
 --------------------------------
 INSTRUCTIONS TO RUN THE PROGRAM
 --------------------------------
