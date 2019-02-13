@@ -101,7 +101,6 @@ int main(void)
     // Merging two minimum frequency trees in each iteration
     for (int j = 0; j < noOfElements - 1; j++)
     {
-      cout<<endl;
 
       // Defining the two minimum candidates in such a way so as to get the two smallest minimum frequency trees
 
