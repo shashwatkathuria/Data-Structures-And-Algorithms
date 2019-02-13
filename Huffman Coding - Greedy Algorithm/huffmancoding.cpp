@@ -18,7 +18,7 @@ class Tree
 {
     public:
       node *root ;
-      Tree(int nodeNumber = 0, long long int frequency = 0)
+      Tree (int nodeNumber = 0, long long int frequency = 0)
       {
           root = new node;
           root->parent = NULL;
@@ -34,6 +34,7 @@ class Tree
       unsigned long long int maxDepth(node* element);
       void printCodes(node* element, string str);
 };
+
 
 int main(void)
 {
@@ -61,20 +62,18 @@ int main(void)
           freqs[i] = number;
 
       }
-      cout<<noOfElements<<endl;
+      cout << noOfElements << endl;
 
-    Tree t[noOfElements];
-
-
+    Tree treeCandidates[noOfElements];
 
     for(int i = 0; i < noOfElements; i++)
     {
-        t[i].root->nodeNumber = i + 1;
-        t[i].root->frequency = freqs[i];
+        treeCandidates[i].root->nodeNumber = i + 1;
+        treeCandidates[i].root->frequency = freqs[i];
     }
 
-    Tree min = t[0];
-    Tree min2 = t[1];
+    Tree firstMinimumCandidate = treeCandidates[0];
+    Tree secondMinimumCandidate = treeCandidates[1];
     int pos1 = 0;
     int pos2 = 1;
     int posEnd = noOfElements - 1;
@@ -82,71 +81,62 @@ int main(void)
     for (int j = 0; j < noOfElements - 1; j++)
     {
       cout<<endl;
-      Tree min = Tree(0, 99999999999999);
-      Tree min2 = Tree(0, 999999999999);
+      Tree firstMinimumCandidate = Tree(0, 99999999999999);
+      Tree secondMinimumCandidate = Tree(0, 999999999999);
 
-      for(int i = 0; i <= posEnd; i++)
+      for (int i = 0; i <= posEnd; i++)
       {
-          if (t[i].nodesSum(t[i].root) < min.nodesSum(min.root))
+          if (treeCandidates[i].nodesSum(treeCandidates[i].root) < firstMinimumCandidate.nodesSum(firstMinimumCandidate.root))
           {
-              min = t[i];
+              firstMinimumCandidate = treeCandidates[i];
               pos1 = i;
           }
       }
 
-      for(int i = 0; i <= posEnd; i++)
+      for (int i = 0; i <= posEnd; i++)
       {
-          if ( (t[i].nodesSum(t[i].root) < min2.nodesSum(min2.root)) && (t[i].nodesSum(t[i].root) != min.nodesSum(min.root)) )
+          if ( (treeCandidates[i].nodesSum(treeCandidates[i].root) < secondMinimumCandidate.nodesSum(secondMinimumCandidate.root)) && (treeCandidates[i].nodesSum(treeCandidates[i].root) != firstMinimumCandidate.nodesSum(firstMinimumCandidate.root)) )
           {
-              min2 = t[i];
+              secondMinimumCandidate = treeCandidates[i];
               pos2 = i;
           }
       }
-      cout<<"\nPos 1 : "<<pos1;
-      cout<<"\nPos 2 : "<<pos2;
-      cout << "\nMinimum     : " << min.nodesSum(min.root);
-      cout << "\n2nd Minimum : " << min2.nodesSum(min2.root);
 
-      min2.treeMerger(min);
+      secondMinimumCandidate.treeMerger(firstMinimumCandidate);
 
-      cout << "\nMerged Sum     : " << min.nodesSum(min.root);
+      treeCandidates[pos1] = firstMinimumCandidate;
+      treeCandidates[pos2] = secondMinimumCandidate;
 
-      t[pos1] = min;
-      t[pos2] = min2;
-
-      cout << "\nTree pos1     : " << t[pos1].nodesSum(t[pos1].root);
-      cout << "\nTree pos2     : " << t[pos2].nodesSum(t[pos2].root);
-      cout<<endl;
-
-      Tree temp = t[posEnd];
-      t[posEnd] = t[pos2];
-      t[pos2] = temp;
+      Tree temp = treeCandidates[posEnd];
+      treeCandidates[posEnd] = treeCandidates[pos2];
+      treeCandidates[pos2] = temp;
       posEnd--;
 
     }
-    cout<<t[0].nodesSum(t[0].root);
-    cout<<endl;
-    t[0].printCodes(t[0].root, "");
 
-    cout<<endl<<"The minimum depth of the tree is : "<<t[0].minDepth(t[0].root)<<endl;
-    cout<<endl<<"The maximum depth of the tree is : "<<t[0].maxDepth(t[0].root)<<endl;
+    cout << treeCandidates[0].nodesSum(treeCandidates[0].root);
+    cout << endl;
+    treeCandidates[0].printCodes(treeCandidates[0].root, "");
+
+    cout << endl << "The minimum depth of the tree is : " << treeCandidates[0].minDepth(treeCandidates[0].root) << endl;
+    cout << endl << "The maximum depth of the tree is : " << treeCandidates[0].maxDepth(treeCandidates[0].root) << endl;
     return 0;
 }
 
 unsigned long long int Tree:: nodesSum(node* element)
 {
-    if ((element-> leftChild == NULL) && (element-> rightChild == NULL))
+    if ( (element-> leftChild == NULL) && (element-> rightChild == NULL) )
     {
         return element->frequency;
     }
-    else
+    else if ( (element-> leftChild != NULL) && (element-> rightChild != NULL) )
     {
         return nodesSum(element->rightChild) + nodesSum(element->leftChild);
     }
 
 }
 
-void Tree::treeMerger(Tree& tree)
+void Tree:: treeMerger(Tree& tree)
 {
 
     node* temp = new node;
@@ -161,36 +151,36 @@ void Tree::treeMerger(Tree& tree)
 }
 unsigned long long int Tree:: minDepth(node* element)
 {
-    if ((element-> leftChild == NULL) && (element-> rightChild == NULL))
+    if ( (element-> leftChild == NULL) && (element-> rightChild == NULL) )
     {
         return 0;
     }
-    else if ((element-> leftChild != NULL) && (element-> rightChild != NULL))
+    else if ( (element-> leftChild != NULL) && (element-> rightChild != NULL) )
     {
-        return min(minDepth(element->rightChild) ,minDepth(element->leftChild)) + 1;
+        return min( minDepth(element->rightChild), minDepth(element->leftChild) ) + 1;
     }
 }
 
 unsigned long long int Tree:: maxDepth(node* element)
 {
-    if ((element-> leftChild == NULL) && (element-> rightChild == NULL))
+    if ( (element-> leftChild == NULL) && (element-> rightChild == NULL) )
     {
         return 0;
     }
-    else if ((element-> leftChild != NULL) && (element-> rightChild != NULL))
+    else if ( (element-> leftChild != NULL) && (element-> rightChild != NULL) )
     {
-        return max(maxDepth(element->rightChild), maxDepth(element->leftChild)) + 1;
+        return max( maxDepth(element->rightChild), maxDepth(element->leftChild) ) + 1;
     }
 }
 
 void Tree:: printCodes(node* element, string str)
 {
-    if ((element-> leftChild == NULL) && (element-> rightChild == NULL))
+    if ( (element-> leftChild == NULL) && (element-> rightChild == NULL) )
     {
-        cout <<"Node Number "<<element->nodeNumber << " Code : " << str << "\n";
+        cout << "Node Number " << element->nodeNumber << " Code : " << str << "\n";
         return;
     }
-    else if ((element-> leftChild != NULL) && (element-> rightChild != NULL))
+    else if ( (element-> leftChild != NULL) && (element-> rightChild != NULL) )
     {
         printCodes(element->leftChild, str + "0");
         printCodes(element->rightChild, str + "1");
