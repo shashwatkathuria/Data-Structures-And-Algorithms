@@ -27,4 +27,5 @@ The run time complexity of this algorithm is O(n^2 x 2^n) where
 n is the number of vertices. This is a reduction from of the
 naive brute force search which would instead take O(n!)=O(n^n)
 time.
+
 -----------------------------------------------------
