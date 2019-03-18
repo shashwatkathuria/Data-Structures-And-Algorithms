@@ -1,0 +1,2005 @@
+The number of nodes present are : 1000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sum of frequency of nodes : 4990911370
+Node Number 503 Code : 0000000000
+Node Number 970 Code : 0000000001
+Node Number 325 Code : 0000000010
+Node Number 172 Code : 0000000011
+Node Number 867 Code : 00000001000
+Node Number 246 Code : 00000001001000
+Node Number 453 Code : 00000001001001
+Node Number 80 Code : 0000000100101
+Node Number 513 Code : 000000010011
+Node Number 533 Code : 00000001010
+Node Number 906 Code : 00000001011
+Node Number 255 Code : 0000000110
+Node Number 342 Code : 00000001110
+Node Number 602 Code : 00000001111
+Node Number 220 Code : 0000001000
+Node Number 252 Code : 0000001001
+Node Number 932 Code : 0000001010
+Node Number 251 Code : 00000010110
+Node Number 83 Code : 00000010111
+Node Number 126 Code : 0000001100
+Node Number 936 Code : 0000001101
+Node Number 782 Code : 0000001110
+Node Number 674 Code : 0000001111
+Node Number 166 Code : 0000010000
+Node Number 21 Code : 0000010001
+Node Number 329 Code : 000001001000
+Node Number 638 Code : 000001001001
+Node Number 640 Code : 00000100101
+Node Number 11 Code : 0000010011
+Node Number 361 Code : 0000010100
+Node Number 364 Code : 0000010101
+Node Number 963 Code : 00000101100
+Node Number 822 Code : 00000101101
+Node Number 482 Code : 0000010111
+Node Number 971 Code : 000001100000
+Node Number 504 Code : 0000011000010
+Node Number 488 Code : 0000011000011
+Node Number 863 Code : 00000110001
+Node Number 938 Code : 0000011001
+Node Number 857 Code : 0000011010
+Node Number 869 Code : 00000110110
+Node Number 748 Code : 000001101110
+Node Number 81 Code : 000001101111
+Node Number 36 Code : 0000011100
+Node Number 898 Code : 0000011101
+Node Number 819 Code : 0000011110
+Node Number 192 Code : 0000011111
+Node Number 930 Code : 0000100000
+Node Number 917 Code : 00001000010
+Node Number 816 Code : 000010000110
+Node Number 151 Code : 000010000111
+Node Number 341 Code : 0000100010
+Node Number 271 Code : 0000100011
+Node Number 388 Code : 0000100100
+Node Number 311 Code : 0000100101
+Node Number 959 Code : 000010011000
+Node Number 116 Code : 000010011001
+Node Number 788 Code : 00001001101
+Node Number 76 Code : 0000100111
+Node Number 698 Code : 0000101000
+Node Number 760 Code : 0000101001
+Node Number 391 Code : 0000101010
+Node Number 550 Code : 0000101011
+Node Number 518 Code : 0000101100
+Node Number 33 Code : 0000101101
+Node Number 7 Code : 0000101110
+Node Number 405 Code : 0000101111
+Node Number 22 Code : 00001100000
+Node Number 122 Code : 000011000010
+Node Number 881 Code : 00001100001100
+Node Number 372 Code : 0000110000110100
+Node Number 539 Code : 0000110000110101
+Node Number 947 Code : 000011000011011
+Node Number 129 Code : 0000110000111
+Node Number 344 Code : 00001100010
+Node Number 944 Code : 00001100011
+Node Number 916 Code : 0000110010
+Node Number 965 Code : 0000110011
+Node Number 703 Code : 0000110100
+Node Number 421 Code : 0000110101
+Node Number 629 Code : 0000110110
+Node Number 330 Code : 0000110111
+Node Number 61 Code : 0000111000
+Node Number 464 Code : 0000111001
+Node Number 260 Code : 0000111010
+Node Number 639 Code : 00001110110
+Node Number 870 Code : 000011101110
+Node Number 475 Code : 000011101111
+Node Number 739 Code : 0000111100
+Node Number 217 Code : 0000111101
+Node Number 899 Code : 0000111110
+Node Number 585 Code : 00001111110
+Node Number 817 Code : 00001111111
+Node Number 683 Code : 0001000000
+Node Number 484 Code : 0001000001
+Node Number 359 Code : 0001000010
+Node Number 567 Code : 00010000110
+Node Number 72 Code : 00010000111
+Node Number 455 Code : 0001000100
+Node Number 751 Code : 0001000101
+Node Number 337 Code : 00010001100
+Node Number 920 Code : 00010001101
+Node Number 2 Code : 0001000111
+Node Number 613 Code : 0001001000
+Node Number 489 Code : 00010010010
+Node Number 219 Code : 00010010011
+Node Number 556 Code : 0001001010
+Node Number 673 Code : 0001001011
+Node Number 535 Code : 0001001100
+Node Number 707 Code : 0001001101
+Node Number 977 Code : 0001001110
+Node Number 71 Code : 00010011110
+Node Number 121 Code : 00010011111
+Node Number 549 Code : 0001010000
+Node Number 695 Code : 00010100010
+Node Number 723 Code : 00010100011
+Node Number 387 Code : 0001010010
+Node Number 974 Code : 00010100110
+Node Number 574 Code : 0001010011100
+Node Number 376 Code : 0001010011101
+Node Number 621 Code : 000101001111
+Node Number 254 Code : 0001010100
+Node Number 521 Code : 0001010101
+Node Number 265 Code : 0001010110
+Node Number 268 Code : 00010101110
+Node Number 975 Code : 00010101111
+Node Number 625 Code : 00010110000
+Node Number 447 Code : 00010110001
+Node Number 635 Code : 0001011001
+Node Number 91 Code : 00010110100
+Node Number 69 Code : 0001011010100
+Node Number 28 Code : 0001011010101
+Node Number 345 Code : 000101101011
+Node Number 714 Code : 0001011011
+Node Number 48 Code : 0001011100
+Node Number 827 Code : 0001011101
+Node Number 485 Code : 0001011110
+Node Number 581 Code : 0001011111
+Node Number 677 Code : 00011000000
+Node Number 594 Code : 00011000001
+Node Number 286 Code : 0001100001
+Node Number 541 Code : 0001100010
+Node Number 385 Code : 0001100011
+Node Number 900 Code : 000110010000
+Node Number 671 Code : 0001100100010
+Node Number 249 Code : 00011001000110
+Node Number 314 Code : 000110010001110
+Node Number 927 Code : 000110010001111
+Node Number 800 Code : 00011001001
+Node Number 845 Code : 0001100101
+Node Number 382 Code : 0001100110
+Node Number 752 Code : 0001100111
+Node Number 400 Code : 00011010000
+Node Number 554 Code : 00011010001
+Node Number 315 Code : 00011010010
+Node Number 490 Code : 00011010011
+Node Number 94 Code : 0001101010
+Node Number 63 Code : 0001101011
+Node Number 267 Code : 000110110000
+Node Number 928 Code : 000110110001
+Node Number 961 Code : 00011011001
+Node Number 691 Code : 0001101101
+Node Number 797 Code : 0001101110
+Node Number 956 Code : 00011011110
+Node Number 335 Code : 00011011111
+Node Number 473 Code : 0001110000
+Node Number 892 Code : 0001110001
+Node Number 542 Code : 0001110010
+Node Number 966 Code : 0001110011
+Node Number 318 Code : 0001110100
+Node Number 416 Code : 0001110101
+Node Number 466 Code : 00011101100
+Node Number 3 Code : 00011101101
+Node Number 75 Code : 0001110111
+Node Number 705 Code : 0001111000000
+Node Number 986 Code : 0001111000001
+Node Number 831 Code : 000111100001
+Node Number 470 Code : 000111100010
+Node Number 15 Code : 0001111000110
+Node Number 806 Code : 00011110001110
+Node Number 713 Code : 00011110001111
+Node Number 439 Code : 0001111001
+Node Number 350 Code : 0001111010
+Node Number 164 Code : 0001111011
+Node Number 498 Code : 00011111000
+Node Number 941 Code : 00011111001
+Node Number 493 Code : 0001111101
+Node Number 300 Code : 0001111110
+Node Number 112 Code : 0001111111
+Node Number 737 Code : 0010000000
+Node Number 923 Code : 0010000001
+Node Number 248 Code : 0010000010
+Node Number 940 Code : 00100000110
+Node Number 955 Code : 00100000111
+Node Number 841 Code : 0010000100
+Node Number 349 Code : 0010000101
+Node Number 814 Code : 0010000110
+Node Number 263 Code : 0010000111
+Node Number 985 Code : 0010001000000
+Node Number 97 Code : 0010001000001
+Node Number 689 Code : 0010001000010
+Node Number 107 Code : 0010001000011
+Node Number 933 Code : 00100010001
+Node Number 153 Code : 0010001001
+Node Number 65 Code : 0010001010
+Node Number 240 Code : 0010001011
+Node Number 662 Code : 00100011000
+Node Number 346 Code : 00100011001
+Node Number 648 Code : 0010001101
+Node Number 496 Code : 0010001110
+Node Number 722 Code : 0010001111
+Node Number 165 Code : 00100100000
+Node Number 733 Code : 001001000010
+Node Number 307 Code : 001001000011
+Node Number 179 Code : 0010010001
+Node Number 216 Code : 0010010010
+Node Number 334 Code : 0010010011
+Node Number 152 Code : 0010010100
+Node Number 278 Code : 0010010101
+Node Number 158 Code : 00100101100
+Node Number 290 Code : 00100101101
+Node Number 378 Code : 0010010111
+Node Number 951 Code : 0010011000
+Node Number 573 Code : 00100110010
+Node Number 306 Code : 00100110011
+Node Number 30 Code : 0010011010
+Node Number 333 Code : 0010011011
+Node Number 669 Code : 00100111000
+Node Number 612 Code : 00100111001
+Node Number 803 Code : 0010011101
+Node Number 207 Code : 0010011110000
+Node Number 351 Code : 0010011110001
+Node Number 997 Code : 0010011110010
+Node Number 820 Code : 0010011110011
+Node Number 746 Code : 00100111101
+Node Number 834 Code : 0010011111
+Node Number 221 Code : 0010100000
+Node Number 560 Code : 00101000010
+Node Number 790 Code : 00101000011
+Node Number 180 Code : 0010100010
+Node Number 74 Code : 00101000110
+Node Number 825 Code : 00101000111
+Node Number 895 Code : 001010010000
+Node Number 195 Code : 001010010001
+Node Number 796 Code : 001010010010
+Node Number 926 Code : 001010010011000
+Node Number 849 Code : 001010010011001
+Node Number 312 Code : 001010010011010
+Node Number 988 Code : 001010010011011
+Node Number 264 Code : 0010100100111
+Node Number 201 Code : 0010100101
+Node Number 386 Code : 00101001100
+Node Number 655 Code : 00101001101
+Node Number 692 Code : 0010100111
+Node Number 904 Code : 0010101000
+Node Number 64 Code : 0010101001
+Node Number 60 Code : 0010101010
+Node Number 628 Code : 0010101011
+Node Number 859 Code : 0010101100
+Node Number 854 Code : 001010110100
+Node Number 305 Code : 00101011010100
+Node Number 491 Code : 00101011010101
+Node Number 645 Code : 0010101101011
+Node Number 780 Code : 00101011011
+Node Number 749 Code : 0010101110
+Node Number 855 Code : 0010101111
+Node Number 206 Code : 00101100000
+Node Number 852 Code : 00101100001
+Node Number 358 Code : 0010110001
+Node Number 23 Code : 0010110010
+Node Number 676 Code : 00101100110
+Node Number 882 Code : 00101100111
+Node Number 446 Code : 0010110100
+Node Number 973 Code : 00101101010
+Node Number 565 Code : 00101101011
+Node Number 393 Code : 0010110110
+Node Number 950 Code : 0010110111
+Node Number 715 Code : 00101110000
+Node Number 185 Code : 001011100010
+Node Number 50 Code : 0010111000110
+Node Number 297 Code : 0010111000111
+Node Number 591 Code : 0010111001
+Node Number 418 Code : 00101110100
+Node Number 90 Code : 00101110101
+Node Number 812 Code : 0010111011
+Node Number 79 Code : 0010111100
+Node Number 8 Code : 0010111101
+Node Number 225 Code : 0010111110
+Node Number 624 Code : 0010111111
+Node Number 233 Code : 0011000000
+Node Number 427 Code : 0011000001
+Node Number 824 Code : 0011000010
+Node Number 953 Code : 0011000011000
+Node Number 937 Code : 00110000110010
+Node Number 211 Code : 0011000011001100
+Node Number 753 Code : 001100001100110100
+Node Number 799 Code : 0011000011001101010
+Node Number 472 Code : 0011000011001101011
+Node Number 449 Code : 00110000110011011
+Node Number 383 Code : 0011000011001110
+Node Number 599 Code : 0011000011001111
+Node Number 643 Code : 001100001101
+Node Number 772 Code : 00110000111
+Node Number 981 Code : 001100010000
+Node Number 672 Code : 001100010001
+Node Number 649 Code : 00110001001
+Node Number 919 Code : 0011000101
+Node Number 295 Code : 0011000110
+Node Number 25 Code : 00110001110
+Node Number 284 Code : 00110001111
+Node Number 793 Code : 0011001000
+Node Number 460 Code : 0011001001
+Node Number 765 Code : 0011001010
+Node Number 66 Code : 0011001011
+Node Number 949 Code : 0011001100
+Node Number 262 Code : 001100110100
+Node Number 601 Code : 001100110101
+Node Number 355 Code : 00110011011
+Node Number 708 Code : 0011001110
+Node Number 454 Code : 0011001111
+Node Number 73 Code : 00110100000
+Node Number 531 Code : 00110100001
+Node Number 548 Code : 0011010001
+Node Number 829 Code : 0011010010
+Node Number 204 Code : 0011010011
+Node Number 84 Code : 0011010100
+Node Number 704 Code : 00110101010
+Node Number 668 Code : 00110101011
+Node Number 365 Code : 0011010110
+Node Number 242 Code : 0011010111
+Node Number 99 Code : 0011011000
+Node Number 865 Code : 0011011001
+Node Number 579 Code : 0011011010
+Node Number 538 Code : 0011011011
+Node Number 913 Code : 0011011100000
+Node Number 802 Code : 0011011100001
+Node Number 191 Code : 001101110001
+Node Number 477 Code : 0011011100100
+Node Number 717 Code : 0011011100101
+Node Number 163 Code : 001101110011
+Node Number 658 Code : 0011011101
+Node Number 479 Code : 0011011110
+Node Number 269 Code : 0011011111
+Node Number 730 Code : 00111000000
+Node Number 347 Code : 00111000001
+Node Number 499 Code : 0011100001
+Node Number 102 Code : 00111000100
+Node Number 210 Code : 001110001010
+Node Number 253 Code : 001110001011
+Node Number 161 Code : 0011100011
+Node Number 261 Code : 0011100100
+Node Number 32 Code : 0011100101
+Node Number 768 Code : 0011100110
+Node Number 893 Code : 001110011100
+Node Number 783 Code : 001110011101
+Node Number 227 Code : 001110011110
+Node Number 811 Code : 00111001111100
+Node Number 29 Code : 00111001111101
+Node Number 732 Code : 0011100111111
+Node Number 190 Code : 0011101000
+Node Number 656 Code : 0011101001
+Node Number 111 Code : 00111010100
+Node Number 969 Code : 001110101010
+Node Number 935 Code : 001110101011
+Node Number 968 Code : 0011101011
+Node Number 410 Code : 0011101100
+Node Number 354 Code : 0011101101
+Node Number 174 Code : 0011101110
+Node Number 604 Code : 0011101111
+Node Number 132 Code : 0011110000
+Node Number 687 Code : 0011110001
+Node Number 990 Code : 0011110010
+Node Number 9 Code : 00111100110
+Node Number 561 Code : 001111001110
+Node Number 514 Code : 001111001111
+Node Number 828 Code : 0011110100
+Node Number 807 Code : 0011110101
+Node Number 840 Code : 001111011000
+Node Number 474 Code : 0011110110010
+Node Number 597 Code : 00111101100110
+Node Number 622 Code : 001111011001110
+Node Number 471 Code : 001111011001111
+Node Number 551 Code : 00111101101
+Node Number 18 Code : 0011110111
+Node Number 247 Code : 0011111000
+Node Number 55 Code : 0011111001
+Node Number 641 Code : 0011111010
+Node Number 763 Code : 0011111011
+Node Number 411 Code : 0011111100
+Node Number 258 Code : 0011111101
+Node Number 909 Code : 001111111000
+Node Number 276 Code : 001111111001
+Node Number 652 Code : 00111111101
+Node Number 327 Code : 0011111111
+Node Number 328 Code : 01000000000
+Node Number 880 Code : 010000000010
+Node Number 434 Code : 010000000011
+Node Number 98 Code : 0100000001
+Node Number 149 Code : 0100000010
+Node Number 194 Code : 0100000011
+Node Number 169 Code : 0100000100
+Node Number 5 Code : 01000001010
+Node Number 379 Code : 01000001011
+Node Number 634 Code : 010000011000
+Node Number 316 Code : 010000011001
+Node Number 572 Code : 01000001101
+Node Number 809 Code : 0100000111
+Node Number 876 Code : 01000010000
+Node Number 775 Code : 01000010001
+Node Number 100 Code : 0100001001
+Node Number 228 Code : 0100001010
+Node Number 512 Code : 01000010110
+Node Number 600 Code : 01000010111
+Node Number 272 Code : 0100001100
+Node Number 851 Code : 0100001101
+Node Number 366 Code : 01000011100
+Node Number 374 Code : 01000011101
+Node Number 308 Code : 0100001111
+Node Number 839 Code : 0100010000
+Node Number 642 Code : 01000100010
+Node Number 223 Code : 01000100011
+Node Number 886 Code : 010001001000
+Node Number 119 Code : 010001001001
+Node Number 731 Code : 01000100101
+Node Number 506 Code : 0100010011
+Node Number 394 Code : 0100010100
+Node Number 409 Code : 01000101010
+Node Number 657 Code : 01000101011
+Node Number 487 Code : 01000101100
+Node Number 570 Code : 01000101101
+Node Number 362 Code : 01000101110
+Node Number 6 Code : 01000101111
+Node Number 589 Code : 0100011000000
+Node Number 596 Code : 0100011000001
+Node Number 186 Code : 010001100001
+Node Number 887 Code : 01000110001
+Node Number 203 Code : 0100011001
+Node Number 198 Code : 0100011010
+Node Number 905 Code : 0100011011
+Node Number 68 Code : 0100011100
+Node Number 666 Code : 0100011101
+Node Number 924 Code : 010001111000
+Node Number 987 Code : 010001111001
+Node Number 896 Code : 01000111101
+Node Number 945 Code : 0100011111
+Node Number 433 Code : 01001000000
+Node Number 552 Code : 01001000001
+Node Number 984 Code : 0100100001
+Node Number 155 Code : 0100100010
+Node Number 929 Code : 0100100011
+Node Number 878 Code : 0100100100
+Node Number 637 Code : 0100100101
+Node Number 743 Code : 010010011000
+Node Number 340 Code : 010010011001
+Node Number 38 Code : 01001001101
+Node Number 992 Code : 0100100111
+Node Number 461 Code : 0100101000
+Node Number 682 Code : 0100101001
+Node Number 401 Code : 01001010100
+Node Number 147 Code : 010010101010
+Node Number 381 Code : 010010101011
+Node Number 784 Code : 01001010110
+Node Number 595 Code : 01001010111
+Node Number 465 Code : 01001011000
+Node Number 964 Code : 0100101100100
+Node Number 942 Code : 010010110010100
+Node Number 757 Code : 010010110010101
+Node Number 701 Code : 01001011001011
+Node Number 319 Code : 010010110011
+Node Number 654 Code : 0100101101
+Node Number 616 Code : 0100101110
+Node Number 27 Code : 0100101111
+Node Number 343 Code : 010011000
+Node Number 515 Code : 010011001
+Node Number 688 Code : 010011010000
+Node Number 367 Code : 010011010001
+Node Number 47 Code : 01001101001
+Node Number 580 Code : 0100110101
+Node Number 781 Code : 010011011
+Node Number 34 Code : 010011100
+Node Number 106 Code : 010011101
+Node Number 497 Code : 0100111100
+Node Number 734 Code : 010011110100
+Node Number 120 Code : 0100111101010
+Node Number 88 Code : 0100111101011
+Node Number 139 Code : 010011110110
+Node Number 142 Code : 010011110111
+Node Number 877 Code : 010011111
+Node Number 897 Code : 010100000
+Node Number 431 Code : 010100001
+Node Number 483 Code : 0101000100
+Node Number 979 Code : 0101000101
+Node Number 774 Code : 010100011
+Node Number 702 Code : 010100100
+Node Number 320 Code : 010100101
+Node Number 529 Code : 01010011000
+Node Number 644 Code : 01010011001
+Node Number 128 Code : 0101001101
+Node Number 424 Code : 010100111
+Node Number 37 Code : 010101000
+Node Number 823 Code : 0101010010
+Node Number 430 Code : 0101010011
+Node Number 403 Code : 010101010
+Node Number 720 Code : 010101011
+Node Number 363 Code : 010101100
+Node Number 425 Code : 010101101
+Node Number 948 Code : 0101011100
+Node Number 532 Code : 0101011101
+Node Number 813 Code : 010101111
+Node Number 123 Code : 0101100000
+Node Number 884 Code : 0101100001
+Node Number 697 Code : 010110001
+Node Number 557 Code : 0101100100000
+Node Number 110 Code : 0101100100001
+Node Number 480 Code : 010110010001
+Node Number 109 Code : 01011001001
+Node Number 524 Code : 0101100101
+Node Number 661 Code : 010110011
+Node Number 883 Code : 010110100
+Node Number 516 Code : 010110101
+Node Number 519 Code : 0101101100
+Node Number 322 Code : 0101101101
+Node Number 183 Code : 010110111
+Node Number 875 Code : 010111000
+Node Number 46 Code : 0101110010
+Node Number 131 Code : 0101110011
+Node Number 860 Code : 010111010000
+Node Number 369 Code : 010111010001
+Node Number 902 Code : 01011101001
+Node Number 994 Code : 0101110101
+Node Number 680 Code : 010111011
+Node Number 419 Code : 010111100
+Node Number 238 Code : 010111101
+Node Number 526 Code : 01011111000
+Node Number 544 Code : 01011111001
+Node Number 934 Code : 0101111101
+Node Number 168 Code : 010111111
+Node Number 288 Code : 011000000
+Node Number 390 Code : 0110000010
+Node Number 735 Code : 0110000011
+Node Number 954 Code : 011000010
+Node Number 58 Code : 011000011
+Node Number 426 Code : 0110001000
+Node Number 389 Code : 0110001001
+Node Number 127 Code : 011000101
+Node Number 522 Code : 011000110
+Node Number 250 Code : 011000111
+Node Number 435 Code : 011001000
+Node Number 215 Code : 011001001
+Node Number 791 Code : 011001010
+Node Number 769 Code : 011001011
+Node Number 540 Code : 011001100
+Node Number 568 Code : 01100110100
+Node Number 771 Code : 01100110101
+Node Number 171 Code : 0110011011
+Node Number 476 Code : 011001110
+Node Number 761 Code : 011001111
+Node Number 375 Code : 011010000
+Node Number 716 Code : 0110100010
+Node Number 360 Code : 0110100011
+Node Number 283 Code : 011010010
+Node Number 755 Code : 0110100110
+Node Number 373 Code : 0110100111
+Node Number 610 Code : 011010100
+Node Number 303 Code : 0110101010
+Node Number 422 Code : 0110101011
+Node Number 105 Code : 011010110
+Node Number 563 Code : 011010111
+Node Number 960 Code : 011011000
+Node Number 598 Code : 011011001
+Node Number 89 Code : 01101101000
+Node Number 710 Code : 011011010010
+Node Number 983 Code : 011011010011
+Node Number 103 Code : 0110110101
+Node Number 338 Code : 011011011
+Node Number 861 Code : 011011100
+Node Number 795 Code : 011011101
+Node Number 279 Code : 01101111000
+Node Number 912 Code : 01101111001
+Node Number 145 Code : 0110111101
+Node Number 619 Code : 011011111
+Node Number 115 Code : 011100000
+Node Number 234 Code : 011100001
+Node Number 181 Code : 011100010
+Node Number 302 Code : 0111000110
+Node Number 566 Code : 0111000111
+Node Number 853 Code : 011100100
+Node Number 397 Code : 011100101
+Node Number 559 Code : 011100110
+Node Number 31 Code : 011100111
+Node Number 42 Code : 011101000
+Node Number 417 Code : 011101001
+Node Number 148 Code : 011101010
+Node Number 244 Code : 0111010110
+Node Number 136 Code : 01110101110
+Node Number 78 Code : 01110101111
+Node Number 724 Code : 011101100
+Node Number 257 Code : 0111011010
+Node Number 440 Code : 0111011011
+Node Number 770 Code : 0111011100
+Node Number 159 Code : 0111011101
+Node Number 607 Code : 011101111
+Node Number 396 Code : 011110000
+Node Number 764 Code : 011110001
+Node Number 214 Code : 011110010000
+Node Number 575 Code : 011110010001
+Node Number 681 Code : 011110010010
+Node Number 317 Code : 011110010011
+Node Number 104 Code : 0111100101
+Node Number 836 Code : 011110011
+Node Number 274 Code : 01111010000
+Node Number 402 Code : 01111010001
+Node Number 804 Code : 0111101001
+Node Number 810 Code : 011110101
+Node Number 184 Code : 011110110
+Node Number 980 Code : 0111101110
+Node Number 138 Code : 011110111100
+Node Number 92 Code : 011110111101
+Node Number 408 Code : 01111011111
+Node Number 582 Code : 011111000
+Node Number 13 Code : 011111001
+Node Number 1000 Code : 011111010
+Node Number 226 Code : 0111110110
+Node Number 420 Code : 01111101110
+Node Number 457 Code : 01111101111
+Node Number 12 Code : 011111100
+Node Number 441 Code : 011111101
+Node Number 957 Code : 0111111100
+Node Number 995 Code : 0111111101
+Node Number 323 Code : 0111111110
+Node Number 792 Code : 0111111111
+Node Number 77 Code : 100000000
+Node Number 511 Code : 100000001
+Node Number 406 Code : 10000001000
+Node Number 175 Code : 100000010010000
+Node Number 972 Code : 100000010010001
+Node Number 67 Code : 10000001001001
+Node Number 726 Code : 1000000100101
+Node Number 324 Code : 100000010011
+Node Number 336 Code : 1000000101
+Node Number 86 Code : 100000011
+Node Number 232 Code : 100000100
+Node Number 888 Code : 1000001010
+Node Number 842 Code : 10000010110
+Node Number 606 Code : 10000010111
+Node Number 832 Code : 100000110
+Node Number 321 Code : 100000111
+Node Number 304 Code : 100001000
+Node Number 135 Code : 1000010010
+Node Number 450 Code : 1000010011
+Node Number 399 Code : 100001010
+Node Number 545 Code : 1000010110
+Node Number 285 Code : 10000101110
+Node Number 871 Code : 10000101111
+Node Number 537 Code : 100001100
+Node Number 630 Code : 100001101
+Node Number 728 Code : 100001110
+Node Number 873 Code : 100001111
+Node Number 747 Code : 1000100000
+Node Number 835 Code : 1000100001
+Node Number 744 Code : 1000100010
+Node Number 492 Code : 1000100011
+Node Number 588 Code : 100010010
+Node Number 709 Code : 100010011
+Node Number 196 Code : 100010100
+Node Number 718 Code : 100010101
+Node Number 189 Code : 1000101100000
+Node Number 193 Code : 1000101100001
+Node Number 646 Code : 100010110001
+Node Number 576 Code : 100010110010
+Node Number 798 Code : 100010110011
+Node Number 134 Code : 1000101101
+Node Number 467 Code : 100010111
+Node Number 623 Code : 1000110000
+Node Number 553 Code : 1000110001
+Node Number 745 Code : 100011001
+Node Number 259 Code : 100011010
+Node Number 456 Code : 100011011
+Node Number 348 Code : 1000111000
+Node Number 721 Code : 1000111001
+Node Number 844 Code : 100011101
+Node Number 178 Code : 100011110
+Node Number 296 Code : 100011111
+Node Number 289 Code : 100100000
+Node Number 943 Code : 100100001
+Node Number 239 Code : 10010001000
+Node Number 256 Code : 10010001001
+Node Number 70 Code : 1001000101
+Node Number 43 Code : 100100011
+Node Number 789 Code : 100100100
+Node Number 87 Code : 100100101
+Node Number 200 Code : 100100110
+Node Number 125 Code : 100100111
+Node Number 885 Code : 100101000000
+Node Number 275 Code : 100101000001
+Node Number 437 Code : 10010100001
+Node Number 266 Code : 1001010001
+Node Number 998 Code : 100101001
+Node Number 371 Code : 100101010
+Node Number 39 Code : 10010101100
+Node Number 398 Code : 10010101101
+Node Number 309 Code : 1001010111
+Node Number 230 Code : 100101100
+Node Number 310 Code : 100101101
+Node Number 501 Code : 10010111000
+Node Number 651 Code : 10010111001
+Node Number 54 Code : 1001011101
+Node Number 999 Code : 100101111
+Node Number 864 Code : 100110000
+Node Number 729 Code : 100110001
+Node Number 16 Code : 100110010
+Node Number 946 Code : 100110011
+Node Number 693 Code : 1001101000
+Node Number 423 Code : 1001101001
+Node Number 684 Code : 100110101
+Node Number 245 Code : 100110110
+Node Number 282 Code : 100110111
+Node Number 339 Code : 100111000
+Node Number 222 Code : 100111001
+Node Number 150 Code : 100111010
+Node Number 706 Code : 100111011
+Node Number 686 Code : 100111100
+Node Number 273 Code : 100111101
+Node Number 478 Code : 100111110
+Node Number 603 Code : 1001111110000
+Node Number 879 Code : 100111111000100
+Node Number 958 Code : 1001111110001010
+Node Number 357 Code : 1001111110001011
+Node Number 486 Code : 10011111100011
+Node Number 26 Code : 1001111110010
+Node Number 667 Code : 1001111110011
+Node Number 848 Code : 10011111101
+Node Number 436 Code : 1001111111
+Node Number 578 Code : 101000000
+Node Number 586 Code : 101000001
+Node Number 921 Code : 101000010
+Node Number 925 Code : 101000011
+Node Number 44 Code : 101000100
+Node Number 779 Code : 10100010100
+Node Number 35 Code : 101000101010
+Node Number 459 Code : 101000101011
+Node Number 794 Code : 1010001011
+Node Number 10 Code : 101000110
+Node Number 633 Code : 101000111
+Node Number 243 Code : 101001000
+Node Number 414 Code : 101001001
+Node Number 659 Code : 1010010100
+Node Number 830 Code : 1010010101
+Node Number 41 Code : 101001011
+Node Number 996 Code : 101001100
+Node Number 922 Code : 101001101
+Node Number 767 Code : 101001110
+Node Number 801 Code : 101001111
+Node Number 209 Code : 101010000
+Node Number 858 Code : 101010001
+Node Number 592 Code : 101010010
+Node Number 438 Code : 101010011
+Node Number 626 Code : 101010100
+Node Number 837 Code : 101010101
+Node Number 24 Code : 101010110
+Node Number 543 Code : 101010111
+Node Number 118 Code : 101011000
+Node Number 785 Code : 101011001
+Node Number 500 Code : 101011010
+Node Number 137 Code : 101011011
+Node Number 412 Code : 101011100
+Node Number 384 Code : 1010111010000
+Node Number 675 Code : 1010111010001
+Node Number 894 Code : 101011101001
+Node Number 235 Code : 10101110101
+Node Number 177 Code : 1010111011
+Node Number 481 Code : 101011110
+Node Number 291 Code : 101011111
+Node Number 377 Code : 1011000000
+Node Number 758 Code : 1011000001
+Node Number 583 Code : 101100001
+Node Number 786 Code : 101100010
+Node Number 982 Code : 101100011
+Node Number 160 Code : 101100100
+Node Number 270 Code : 101100101
+Node Number 918 Code : 1011001100
+Node Number 872 Code : 1011001101
+Node Number 202 Code : 101100111
+Node Number 777 Code : 101101000000
+Node Number 631 Code : 101101000001
+Node Number 608 Code : 10110100001
+Node Number 808 Code : 1011010001
+Node Number 759 Code : 101101001
+Node Number 229 Code : 1011010100
+Node Number 14 Code : 1011010101
+Node Number 187 Code : 101101011
+Node Number 577 Code : 101101100
+Node Number 51 Code : 101101101
+Node Number 130 Code : 1011011100
+Node Number 742 Code : 1011011101
+Node Number 562 Code : 101101111
+Node Number 231 Code : 101110000
+Node Number 605 Code : 101110001
+Node Number 20 Code : 1011100100
+Node Number 154 Code : 10111001010
+Node Number 124 Code : 10111001011
+Node Number 57 Code : 101110011
+Node Number 442 Code : 101110100
+Node Number 82 Code : 101110101
+Node Number 663 Code : 101110110
+Node Number 546 Code : 1011101110
+Node Number 952 Code : 1011101111
+Node Number 685 Code : 101111000
+Node Number 213 Code : 1011110010
+Node Number 740 Code : 1011110011
+Node Number 978 Code : 101111010
+Node Number 53 Code : 1011110110
+Node Number 144 Code : 1011110111
+Node Number 101 Code : 101111100
+Node Number 133 Code : 101111101
+Node Number 52 Code : 1011111100
+Node Number 590 Code : 10111111010
+Node Number 368 Code : 1011111101100
+Node Number 931 Code : 1011111101101
+Node Number 962 Code : 10111111011100
+Node Number 805 Code : 101111110111010
+Node Number 868 Code : 1011111101110110
+Node Number 555 Code : 1011111101110111
+Node Number 620 Code : 1011111101111
+Node Number 443 Code : 101111111
+Node Number 370 Code : 110000000
+Node Number 298 Code : 110000001
+Node Number 462 Code : 110000010
+Node Number 502 Code : 1100000110
+Node Number 141 Code : 1100000111
+Node Number 294 Code : 110000100
+Node Number 508 Code : 110000101
+Node Number 665 Code : 110000110
+Node Number 778 Code : 1100001110
+Node Number 534 Code : 11000011110
+Node Number 237 Code : 11000011111
+Node Number 505 Code : 110001000
+Node Number 56 Code : 110001001
+Node Number 694 Code : 110001010
+Node Number 182 Code : 110001011
+Node Number 754 Code : 110001100
+Node Number 113 Code : 110001101
+Node Number 587 Code : 110001110
+Node Number 738 Code : 110001111
+Node Number 140 Code : 110010000
+Node Number 696 Code : 110010001
+Node Number 908 Code : 11001001000
+Node Number 821 Code : 110010010010
+Node Number 636 Code : 1100100100110
+Node Number 976 Code : 1100100100111
+Node Number 313 Code : 11001001010
+Node Number 469 Code : 11001001011
+Node Number 766 Code : 110010011
+Node Number 850 Code : 110010100
+Node Number 40 Code : 110010101
+Node Number 736 Code : 1100101100
+Node Number 856 Code : 1100101101
+Node Number 699 Code : 110010111
+Node Number 914 Code : 110011000
+Node Number 170 Code : 110011001
+Node Number 4 Code : 110011010
+Node Number 993 Code : 110011011
+Node Number 451 Code : 110011100
+Node Number 727 Code : 110011101
+Node Number 468 Code : 1100111100
+Node Number 609 Code : 1100111101
+Node Number 593 Code : 1100111110
+Node Number 564 Code : 1100111111
+Node Number 205 Code : 110100000
+Node Number 218 Code : 110100001
+Node Number 404 Code : 110100010
+Node Number 843 Code : 110100011
+Node Number 891 Code : 110100100
+Node Number 846 Code : 110100101
+Node Number 762 Code : 110100110
+Node Number 241 Code : 1101001110
+Node Number 156 Code : 11010011110
+Node Number 530 Code : 11010011111
+Node Number 967 Code : 110101000
+Node Number 901 Code : 1101010010
+Node Number 429 Code : 1101010011
+Node Number 494 Code : 110101010
+Node Number 292 Code : 110101011
+Node Number 670 Code : 110101100
+Node Number 756 Code : 110101101
+Node Number 236 Code : 110101110
+Node Number 173 Code : 110101111
+Node Number 712 Code : 11011000000
+Node Number 711 Code : 110110000010
+Node Number 117 Code : 1101100000110
+Node Number 277 Code : 11011000001110
+Node Number 818 Code : 11011000001111
+Node Number 911 Code : 1101100001
+Node Number 527 Code : 110110001
+Node Number 188 Code : 110110010
+Node Number 660 Code : 110110011
+Node Number 167 Code : 110110100
+Node Number 719 Code : 110110101
+Node Number 146 Code : 110110110
+Node Number 448 Code : 1101101110
+Node Number 301 Code : 1101101111
+Node Number 108 Code : 1101110000
+Node Number 463 Code : 1101110001
+Node Number 910 Code : 110111001
+Node Number 299 Code : 110111010
+Node Number 407 Code : 110111011
+Node Number 615 Code : 1101111000
+Node Number 647 Code : 11011110010
+Node Number 162 Code : 11011110011
+Node Number 517 Code : 110111101
+Node Number 444 Code : 1101111100
+Node Number 741 Code : 1101111101
+Node Number 224 Code : 110111111
+Node Number 617 Code : 111000000
+Node Number 93 Code : 111000001
+Node Number 45 Code : 111000010
+Node Number 525 Code : 111000011
+Node Number 650 Code : 111000100
+Node Number 495 Code : 111000101
+Node Number 776 Code : 111000110
+Node Number 890 Code : 111000111
+Node Number 352 Code : 1110010000
+Node Number 991 Code : 1110010001
+Node Number 19 Code : 11100100100
+Node Number 332 Code : 111001001010
+Node Number 415 Code : 111001001011
+Node Number 903 Code : 1110010011
+Node Number 293 Code : 111001010
+Node Number 874 Code : 111001011
+Node Number 510 Code : 111001100
+Node Number 326 Code : 111001101
+Node Number 838 Code : 111001110
+Node Number 331 Code : 111001111
+Node Number 773 Code : 1110100000
+Node Number 114 Code : 1110100001
+Node Number 395 Code : 111010001
+Node Number 627 Code : 111010010
+Node Number 458 Code : 111010011
+Node Number 815 Code : 111010100
+Node Number 889 Code : 111010101
+Node Number 96 Code : 111010110
+Node Number 678 Code : 1110101110
+Node Number 547 Code : 1110101111
+Node Number 509 Code : 111011000
+Node Number 197 Code : 111011001
+Node Number 445 Code : 111011010
+Node Number 212 Code : 1110110110
+Node Number 287 Code : 11101101110
+Node Number 432 Code : 111011011110
+Node Number 847 Code : 111011011111
+Node Number 833 Code : 111011100
+Node Number 528 Code : 111011101
+Node Number 523 Code : 111011110
+Node Number 558 Code : 1110111110
+Node Number 95 Code : 1110111111
+Node Number 611 Code : 111100000
+Node Number 939 Code : 1111000010
+Node Number 569 Code : 1111000011
+Node Number 653 Code : 111100010
+Node Number 176 Code : 1111000110
+Node Number 428 Code : 11110001110
+Node Number 157 Code : 11110001111
+Node Number 907 Code : 111100100
+Node Number 520 Code : 111100101
+Node Number 1 Code : 111100110
+Node Number 281 Code : 111100111
+Node Number 59 Code : 1111010000
+Node Number 208 Code : 1111010001
+Node Number 584 Code : 111101001
+Node Number 17 Code : 111101010
+Node Number 750 Code : 111101011
+Node Number 826 Code : 111101100
+Node Number 536 Code : 111101101
+Node Number 380 Code : 111101110
+Node Number 632 Code : 111101111
+Node Number 199 Code : 111110000
+Node Number 356 Code : 1111100010
+Node Number 452 Code : 111110001100
+Node Number 862 Code : 111110001101
+Node Number 85 Code : 11111000111
+Node Number 679 Code : 111110010
+Node Number 664 Code : 1111100110
+Node Number 915 Code : 1111100111
+Node Number 866 Code : 111110100
+Node Number 507 Code : 111110101
+Node Number 353 Code : 11111011000
+Node Number 787 Code : 11111011001
+Node Number 618 Code : 1111101101
+Node Number 49 Code : 111110111
+Node Number 143 Code : 1111110000
+Node Number 571 Code : 11111100010
+Node Number 413 Code : 11111100011
+Node Number 690 Code : 111111001
+Node Number 700 Code : 111111010
+Node Number 989 Code : 111111011
+Node Number 725 Code : 1111111000
+Node Number 280 Code : 1111111001
+Node Number 62 Code : 111111101
+Node Number 614 Code : 111111110
+Node Number 392 Code : 111111111
+
+The minimum depth of the tree is : 9
+
+The maximum depth of the tree is : 19
