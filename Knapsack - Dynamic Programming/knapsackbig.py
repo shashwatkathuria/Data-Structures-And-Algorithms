@@ -34,7 +34,7 @@ def main():
 
     ans = {}
 	
-	print("COMPUTING, PLEASE WAIT...")
+    print("COMPUTING, PLEASE WAIT...")
     # Calling knapsack algorithm
     print("The optimal value for the knapsack is : "knapsackBig(ans, capacity, noOfItems, weights, values))
 
