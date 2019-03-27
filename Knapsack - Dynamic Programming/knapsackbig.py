@@ -29,14 +29,14 @@ def main():
     for i in range(noOfItems):
         tempItemInfo = file.readline().split(" ")
         weights.append(int(tempItemInfo[1]))
-        print(i)
+        print("INSERTING ITEM NUMBER : " + str(i + 1))
         values.append(int(tempItemInfo[0]))
 
     ans = {}
 	
-    print("COMPUTING, PLEASE WAIT...")
+    print("\nCOMPUTING, PLEASE WAIT...\n")
     # Calling knapsack algorithm
-    print("The optimal value for the knapsack is : "knapsackBig(ans, capacity, noOfItems, weights, values))
+    print("The optimal value for the knapsack is : " + str(knapsackBig(ans, capacity, noOfItems, weights, values)) )
 
 def knapsackBig(ans, size, noOfItems, weights, values):
     """Funtion to compute optimal knapsack solution. Inputs are the info
