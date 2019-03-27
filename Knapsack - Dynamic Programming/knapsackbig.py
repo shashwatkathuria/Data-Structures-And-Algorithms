@@ -14,7 +14,6 @@ sys.setrecursionlimit(10000)
 counterReference = 0
 
 def main():
-    global counterReference
 
     # Reading inputs from the input fie and storing them
     file = open("BigKnapsack.txt","r")
@@ -34,15 +33,14 @@ def main():
         values.append(int(tempItemInfo[0]))
 
     ans = {}
+	
+	print("COMPUTING, PLEASE WAIT...")
     # Calling knapsack algorithm
-    print(knapsackBig(ans, capacity, noOfItems, weights, values))
+    print("The optimal value for the knapsack is : "knapsackBig(ans, capacity, noOfItems, weights, values))
 
 def knapsackBig(ans, size, noOfItems, weights, values):
     """Funtion to compute optimal knapsack solution. Inputs are the info
        about knapsack, available items and a dict to store answers."""
-
-    # Printing progress
-    print("IN PROCESS...Please wait for counter to reach somewhere near " + str(counterReference) + "   : " + str(noOfItems)  )
 
     # Base case
     if noOfItems == 0 or size == 0:
