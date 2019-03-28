@@ -1,0 +1,2 @@
+The items selected are : [2, 4, 3, 5]
+The optimal knapsack solution is : 141
