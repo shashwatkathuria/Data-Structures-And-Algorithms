@@ -77,8 +77,8 @@ def longestCommonSubstring(string1, string2):
         print("\n")
 
     # Printing result
-    print("First string  : " + str(string1))
-    print("Second string : " + str(string2))
+    print("First string  : " + str(string1) + "\n")
+    print("Second string : " + str(string2) + "\n")
     print("The longest common substring is : " + str(LongestCommonSubstring))
     print("The length of longest common subtring is : " + str(result[0]))
 
