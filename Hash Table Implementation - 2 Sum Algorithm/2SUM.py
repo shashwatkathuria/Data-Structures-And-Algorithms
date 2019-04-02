@@ -17,15 +17,14 @@ def main():
     file = open("2SUM.txt", "r")
 
     listOfElements = []
+    print("READING ELEMENTS FROM THE FILE..PLEASE WAIT ")
     for i in range(1000000):
         element = int( file.readline() )
         listOfElements.append( [element, hashFunction(element)] )
-        print("READING ELEMENT NUMBER " + str(i + 1))
 
     # Separate chaining the hash table using a quick and dirty hash function
+    print("INSERTING ELEMENTS INTO THE HASH TABLE..PLEASE WAIT ")
     for i in range(1000000):
-        print("INSERTING ELEMENT NUMBER " + str(i + 1))
-
         temp = []
         temp = ( hashTable[listOfElements[i][1]] ) [ : ]
 
