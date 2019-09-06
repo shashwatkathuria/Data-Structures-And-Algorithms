@@ -1,0 +1,3 @@
+S1 Google MicroSoft IBM
+S2 IBM MicroSoft Google
+S3 IBM Google MicroSoft

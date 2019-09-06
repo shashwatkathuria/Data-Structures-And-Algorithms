@@ -1,0 +1,3 @@
+Google S1 S2 S3
+MicroSoft S2 S3 S1
+IBM S3 S1 S2
