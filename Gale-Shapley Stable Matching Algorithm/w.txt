@@ -1,0 +1,5 @@
+L D B E C A
+M B A D C E
+N A C E D B
+O D A C B E
+P B E A C D

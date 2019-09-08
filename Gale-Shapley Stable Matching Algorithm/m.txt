@@ -1,0 +1,5 @@
+A O M N L P
+B P N M L O
+C M P L O N
+D P M O N L
+E O L M N P
