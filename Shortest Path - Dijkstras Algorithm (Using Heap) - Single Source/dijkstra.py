@@ -23,6 +23,159 @@ notVisitedVertices = list(range(2, noOfVertices + 1, 1))
 distances = [ 0 ] * 2
 distances += [10000] * (noOfVertices - 1)
 
+def main():
+    t1 = time.time()
+    # Reading data from file and storing the edges in a list of edges
+    file = open("dijkstraData.txt", 'r')
+
+    for i in range(noOfVertices):
+
+        vertexAndEdgesInfo = file.readline().split('\t')
+        vertex = int( vertexAndEdgesInfo[0] )
+        edgesInfo = vertexAndEdgesInfo[1 : -1]
+
+        for edge in edgesInfo:
+
+            edgeInfo = edge.split(',')
+            directedEdge = DirectedEdge(startVertex = vertex, endVertex = int( edgeInfo[0] ), edgeWeight = int( edgeInfo[1] ))
+            print("ADDED EDGE : " + str(directedEdge) )
+            edges.append( directedEdge )
+
+    # Calling dijkstra's algorithm on the graph
+    dijkstra(edges)
+
+    # Printing the actual values of the shortest paths
+    print("\n\nTHE SHORTEST PATHS ARE : \n\n")
+
+    for i in range(1, len(distances)):
+        print("The shortest path from " + str(startVertex) + " to " + str(i) + " has distance : " + str(distances[i]) )
+
+    print("\n")
+    t2 = time.time()
+    print(t2-t1, "seconds time taken.")
+
+
+def dijkstra(edges):
+    """Function for dijkstra's algorithm."""
+
+    # Initializing heap
+    minimizingCandidateEdges = Heap(1 * len(edges), 4)
+
+    # No vertices in candidate edges heap initially
+    verticesInCurrentHeap = []
+
+    # Initiaizing vertices in current heap with potential candidates from
+    # source vertex initially
+    for directedEdge in edges:
+        # From conquered(start vertex) to unconquered territory
+        # (all expect start vertex)
+        if (directedEdge.startVertex == startVertex) and (directedEdge.endVertex != startVertex):
+            verticesInCurrentHeap.append(directedEdge.endVertex)
+            dijkstraCriterion = distances[ directedEdge.startVertex ] + directedEdge.edgeWeight
+            directedEdge.setDijkstraCriterion(dijkstraCriterion)
+            minimizingCandidateEdges.insertElement( directedEdge, minimizingCandidateEdges.getI() )
+        else:
+            continue
+
+    # Variable to keep track of last removed vertex
+    lastRemovedVertex = None
+
+    # While all vertices are not conquered
+    while len(visitedVertices) != noOfVertices:
+
+            # Getting minimum candidate edge from heap
+            minimumDijkstraCriterionEdge = minimizingCandidateEdges.extractMinimum()
+            # Updating minimum distance in distances answer accordingly
+            distances[ minimumDijkstraCriterionEdge.endVertex ] = minimumDijkstraCriterionEdge.dijkstraCriterion
+            # Removing that edge
+            minimizingCandidateEdges.removeMinimum()
+
+            # Keeping track of indices to remove due to that edge
+            indicesToRemove = []
+            for i in range(minimizingCandidateEdges.i):
+                edge = minimizingCandidateEdges.heap[i]
+                # Continue if "NaN"
+                if type(edge) == str:
+                    continue
+                # Remove if this condition holds true
+                if edge.endVertex == minimumDijkstraCriterionEdge.endVertex:
+                    indicesToRemove.append(i)
+
+            # Removing all those edges from heap
+            for i in indicesToRemove:
+                minimizingCandidateEdges.removeMinimum(i)
+
+            # Updating last removed vertex, conquered territory, unconquered
+            # territory and vertices in current heap
+            lastRemovedVertex = minimumDijkstraCriterionEdge.endVertex
+            visitedVertices.append(lastRemovedVertex)
+            notVisitedVertices.remove(lastRemovedVertex)
+            verticesInCurrentHeap.remove(lastRemovedVertex)
+
+            # Updating heap edges and adding new potential edges
+            for directedEdge in edges:
+
+                # From last removed vertex to unconquered territory
+                if (directedEdge.startVertex == lastRemovedVertex) and (directedEdge.endVertex in notVisitedVertices):
+
+                    # Required variables
+                    flag = True
+                    earlierDijkstraCriterion = None
+                    newDijkstraCriterion = None
+
+                    # If not in heap, then add edge
+                    if (directedEdge.endVertex not in verticesInCurrentHeap):
+
+                        verticesInCurrentHeap.append(directedEdge.endVertex)
+                        dijkstraCriterion = distances[ directedEdge.startVertex ] + directedEdge.edgeWeight
+                        directedEdge.setDijkstraCriterion(dijkstraCriterion)
+                        minimizingCandidateEdges.insertElement( directedEdge, minimizingCandidateEdges.getI() )
+
+                    # Else if present in heap, check for current dijkstra
+                    # criterion and new dijkstra criterion, update if
+                    # required
+                    else:
+
+                        # New possible dijkstra criterion
+                        newDijkstraCriterion = distances[ directedEdge.startVertex ] + directedEdge.edgeWeight
+                        removeIndex = None
+
+                        # Getting earlier dijkstra edge and its older criterion
+                        for i in range(minimizingCandidateEdges.i):
+                            edge = minimizingCandidateEdges.heap[i]
+                            if type(edge) == str:
+                                continue
+                            if edge.endVertex == directedEdge.endVertex:
+                                earlierDijkstraCriterion = edge.dijkstraCriterion
+                                removeIndex = i
+                                break
+
+                        # If found such an index
+                        if removeIndex != None:
+
+                            # Update if new dijkstra criterion is lesser than
+                            # older one
+                            if newDijkstraCriterion < earlierDijkstraCriterion:
+                                minimizingCandidateEdges.removeMinimum(removeIndex)
+                                directedEdge.setDijkstraCriterion(newDijkstraCriterion)
+                                minimizingCandidateEdges.insertElement(directedEdge, minimizingCandidateEdges.getI())
+
+                        # Else if not found such an index
+                        else:
+                            # If earlier dijkstra criterion is none, that is the
+                            # edge doesn't exist in heap, then add the edge
+                            if earlierDijkstraCriterion == None:
+                                directedEdge.setDijkstraCriterion(newDijkstraCriterion)
+                                minimizingCandidateEdges.insertElement(directedEdge, minimizingCandidateEdges.getI())
+
+                            # If earlier dijkstra criterion is smaller and the
+                            # edge doesn't exist in heap, then add the edge
+                            elif newDijkstraCriterion > earlierDijkstraCriterion:
+                                directedEdge.setDijkstraCriterion(earlierDijkstraCriterion)
+                                minimizingCandidateEdges.insertElement(directedEdge, minimizingCandidateEdges.getI())
+
+
+# Class for directed edge
 class DirectedEdge:
 
     def __init__(self, startVertex, endVertex, edgeWeight):
@@ -42,125 +195,8 @@ class DirectedEdge:
         """Function to store/update current dijkstra criterion for edge."""
         self.dijkstraCriterion = dijkstraCriterion
 
-def main():
-    t1 = time.time()
-    # Reading data from file and storing the edges in a list of edges
-    file = open("dijkstraData.txt", 'r')
 
-    for i in range(noOfVertices):
-
-        vertexAndEdgesInfo = file.readline().split('\t')
-        vertex = int( vertexAndEdgesInfo[0] )
-        edgesInfo = vertexAndEdgesInfo[1 : -1]
-
-        for edge in edgesInfo:
-
-            edgeInfo = edge.split(',')
-            directedEdge = DirectedEdge(startVertex = vertex, endVertex = int( edgeInfo[0] ), edgeWeight = int( edgeInfo[1] ))
-            # print("ADDED EDGE : " + str(directedEdge) )
-            edges.append( directedEdge )
-
-    # Calling dijkstra's algorithm on the graph
-    dijkstra(edges)
-
-    # Printing the actual values of the shortest paths
-    print("\n\nTHE SHORTEST PATHS ARE : \n\n")
-
-    for i in range(1, len(distances)):
-        print("The shortest path from " + str(startVertex) + " to " + str(i) + " has distance : " + str(distances[i]) )
-
-    print("\n")
-    t2 = time.time()
-    print(t2-t1)
-
-
-def dijkstra(edges):
-
-    minimizingCandidateEdges = Heap(1 * len(edges), 4)
-
-    verticesInCurrentHeap = []
-
-    for directedEdge in edges:
-
-        if (directedEdge.startVertex == startVertex) and (directedEdge.endVertex != startVertex):
-            verticesInCurrentHeap.append(directedEdge.endVertex)
-            dijkstraCriterion = distances[ directedEdge.startVertex ] + directedEdge.edgeWeight
-            directedEdge.setDijkstraCriterion(dijkstraCriterion)
-            minimizingCandidateEdges.insertElement( directedEdge, minimizingCandidateEdges.getI() )
-        else:
-            continue
-
-
-    lastRemovedVertex = None
-
-    while len(visitedVertices) != noOfVertices:
-            minimumDijkstraCriterionEdge = minimizingCandidateEdges.extractMinimum()
-            distances[ minimumDijkstraCriterionEdge.endVertex ] = minimumDijkstraCriterionEdge.dijkstraCriterion
-            minimizingCandidateEdges.removeMinimum()
-            indicesToRemove = []
-            for i in range(minimizingCandidateEdges.i):
-                edge = minimizingCandidateEdges.heap[i]
-                if type(edge) == str:
-                    continue
-                if edge.endVertex == minimumDijkstraCriterionEdge.endVertex:
-                    indicesToRemove.append(i)
-            for i in indicesToRemove:
-                edge = minimizingCandidateEdges.heap[i]
-                minimizingCandidateEdges.removeMinimum(i)
-
-            lastRemovedVertex = minimumDijkstraCriterionEdge.endVertex
-            visitedVertices.append(lastRemovedVertex)
-            notVisitedVertices.remove(lastRemovedVertex)
-            verticesInCurrentHeap.remove(lastRemovedVertex)
-
-            for directedEdge in edges:
-
-                if (directedEdge.startVertex == lastRemovedVertex) and (directedEdge.endVertex in notVisitedVertices):
-
-                    flag = True
-                    earlierDijkstraCriterion = None
-                    newDijkstraCriterion = None
-
-                    if (directedEdge.endVertex not in verticesInCurrentHeap):
-
-                        verticesInCurrentHeap.append(directedEdge.endVertex)
-                        dijkstraCriterion = distances[ directedEdge.startVertex ] + directedEdge.edgeWeight
-                        directedEdge.setDijkstraCriterion(dijkstraCriterion)
-                        minimizingCandidateEdges.insertElement( directedEdge, minimizingCandidateEdges.getI() )
-
-                    else:
-                        verticesInCurrentHeap.append(directedEdge.endVertex)
-                        newDijkstraCriterion = distances[ directedEdge.startVertex ] + directedEdge.edgeWeight
-                        removeIndex = None
-
-                        for i in range(minimizingCandidateEdges.i):
-                            edge = minimizingCandidateEdges.heap[i]
-                            if type(edge) == str:
-                                continue
-                            if edge.endVertex == directedEdge.endVertex:
-                                earlierDijkstraCriterion = edge.dijkstraCriterion
-                                removeIndex = i
-                                break
-
-                        if removeIndex != None:
-
-                            if newDijkstraCriterion < earlierDijkstraCriterion:
-                                minimizingCandidateEdges.removeMinimum(removeIndex)
-                                directedEdge.setDijkstraCriterion(newDijkstraCriterion)
-                                minimizingCandidateEdges.insertElement(directedEdge, minimizingCandidateEdges.getI())
-
-
-                        else:
-                            if earlierDijkstraCriterion == None:
-                                directedEdge.setDijkstraCriterion(newDijkstraCriterion)
-                                minimizingCandidateEdges.insertElement(directedEdge, minimizingCandidateEdges.getI())
-
-                            elif newDijkstraCriterion > earlierDijkstraCriterion:
-                                directedEdge.setDijkstraCriterion(earlierDijkstraCriterion)
-                                minimizingCandidateEdges.insertElement(directedEdge, minimizingCandidateEdges.getI())
-
-
-
+# Class for heap
 class Heap:
 
     def __init__(self, noOfElements, limitOfRestructuring):
@@ -308,6 +344,6 @@ class Heap:
         for element in tempList:
             self.insertElement(element, self.i)
 
-
+# Calling main function
 if __name__ == "__main__":
     main()
